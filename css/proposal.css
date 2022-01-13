@@ -1,0 +1,17 @@
+/* your CSS goes here */
+h1 {
+    font-weight: 300;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 200;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+p {
+    line-height: 1.5;
+    color: black;
+}
