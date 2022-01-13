@@ -3,6 +3,7 @@ h1 {
     font-weight: 300;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-align: center;
+    background-color: cornflowerblue;
 }
 
 h2 {
@@ -13,5 +14,9 @@ h2 {
 
 p {
     line-height: 1.5;
+}
+
+p:hover {
+    background-color:silver;
     color: black;
 }
