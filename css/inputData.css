@@ -1,0 +1,33 @@
+body {
+    /* background-color: #CFC0BD; */
+    background-image: url("../img/ForestBackground.jpg");
+    font-family: 'Roboto', sans-serif;
+}
+.titleOfPage {
+    text-align: center;
+    font-weight: bold;
+    font-size: 6rem;
+    margin-top: 9%;
+}
+.footprint {
+    background-color: #7F9183;
+    color: white;
+    font-size: 25px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.earth {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.navbar-custom {
+    background-color: #586F6B;
+}
+.nav-link {
+    color: white;
+}
