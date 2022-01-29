@@ -7,7 +7,7 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 6rem;
-    margin-top: 9%;
+    margin-top: 6.5%;
 }
 .footprint {
     background-color: #7F9183;
@@ -25,9 +25,12 @@ body {
   margin-right: auto;
   width: 75%;
 }
-.navbar-custom {
+.navbar {
     background-color: #586F6B;
 }
-.nav-link {
-    color: white;
+.score {
+    margin-top: .4em;
+    font-size: 9em;
+    text-align: center;
+    font-weight: bold;
 }
