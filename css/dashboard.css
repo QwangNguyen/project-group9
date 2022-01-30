@@ -12,19 +12,10 @@ main {
     height: 750px;
 }
 
-.avatar {
-    width: 300px;
-    height: 300px;
-    padding: 15em;
-}
-
 .col-sm-10 {
     width: 280px;
 }
 
-.form-group {
-    margin-bottom: 0.5rem;
-}
 
 .col-sm-offset-2 {
     margin-top: 2rem;
@@ -37,21 +28,10 @@ main {
     padding: 1rem;
 }
 
+.category {
+    font-size: larger;
+}
 
 .navbar {
     background-color: #586F6B;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    max-width: 500px;
-    margin-top:auto;
-    margin-left:auto;
-    margin-right: auto;
-    padding: 2rem;
-}
-
-#name {
-    margin-top: 5rem;
 }
