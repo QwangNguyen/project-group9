@@ -40,14 +40,10 @@ main {
     padding-right: 2rem;
 }
 
-.trivia:nth-of-type(even) {
+.trivia {
     background-color: #DDD5D0;
     color: black;
     font-size: 25px;
-}
-
-.trivia:nth-of-type(odd) {
-    background-color: #7F9183;
-    color: white;
-    font-size: 25px;
+    width: 350px;
+    height: 200px;
 }
