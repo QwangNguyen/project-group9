@@ -1,3 +1,37 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    /* background-color: #CFC0BD; */
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-color: #e0e0e0;
+    height: 750px;
+}
+
+.col-sm-10 {
+    width: 280px;
+}
+
+
+.col-sm-offset-2 {
+    margin-top: 2rem;
+}
+
+.container {
+    max-width: 960px;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.category {
+    font-size: larger;
+}
+
+.navbar {
+    background-color: #586F6B;
+}
