@@ -3,35 +3,27 @@
 }
 
 body {
-    /* background-color: #CFC0BD; */
+    background-color: white;
     font-family: 'Roboto', sans-serif;
 }
 
 main {
-    background-color: #e0e0e0;
+    background-color: white;
     height: 750px;
-}
-
-.col-sm-10 {
-    width: 280px;
-}
-
-
-.col-sm-offset-2 {
-    margin-top: 2rem;
-}
-
-.container {
-    max-width: 960px;
-    margin-left:auto;
-    margin-right: auto;
-    padding: 1rem;
-}
-
-.category {
-    font-size: larger;
 }
 
 .navbar {
     background-color: #586F6B;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.footprint {
+    background-color: #7F9183;
+    color: white;
+    font-size: 25px;
 }
