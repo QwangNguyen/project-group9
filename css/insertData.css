@@ -1,0 +1,13 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.navbarCustom {
+    background-color: #586F6B;
+    font-size: 1.50em;
+}
+.navbarData {
+    background-color: #7F9183;
+    max-width: 50%;
+    position: fixed;
+    left: 50%;
+}

@@ -7,7 +7,7 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 6rem;
-    margin-top: 6.5%;
+    margin-top: 3.5%;
 }
 .footprint {
     background-color: #7F9183;
@@ -17,20 +17,14 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 9rem;
 }
-.earth {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-.navbar {
-    background-color: #586F6B;
-}
-.score {
-    margin-top: .4em;
+.score { /*part of sustainability score page*/
+    margin-top: 1em;
     font-size: 9em;
     text-align: center;
     font-weight: bold;
+}
+.buttonCustom {
+    border-radius: 40px;
 }
