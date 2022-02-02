@@ -32,6 +32,8 @@ p {
     color: white;
     font-size: 25px;
     text-align: center;
+    width:13em;
+    border-radius: 40px;
 }
 
 .navbar {
