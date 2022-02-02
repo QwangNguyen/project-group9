@@ -1,13 +1,20 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-.navbarCustom {
-    background-color: #586F6B;
-    font-size: 1.50em;
+.earth {
+    margin-top: 15%;
 }
-.navbarData {
-    background-color: #7F9183;
-    max-width: 50%;
-    position: fixed;
-    left: 50%;
+.container {
+    display: flex;
+}
+
+.box-1{
+    align-content: center;
+}
+.box-2 {
+    background-color: #DDD5D0;
+}
+.tabMenu li {
+    display: inline-block;
+    padding: 0px 25px;
 }

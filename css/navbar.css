@@ -40,6 +40,6 @@ li, a, button {
 .aboutUsButton:hover {
     background-color: rgba(127, 145, 131, 0.2);
 }
-img {
+.logo {
     max-height: 65px;
 }
