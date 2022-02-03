@@ -2,16 +2,18 @@
     box-sizing: border-box;
 }
 
+/* set font style for the body */
 body {
-    /* background-color: #CFC0BD; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
 }
 
+/* set background color and style for the main section */
 main {
     background-color: #e0e0e0;
     height: 1000px;
 }
 
+/* set the style of the avatar */
 .avatar img {
     width: 300px;
     height: 200px;
@@ -20,6 +22,7 @@ main {
     margin-left: 5em;
 }
 
+/* set the text style for both containers */
 .container {
     max-width: 960px;
     margin-left: 30em;
@@ -27,15 +30,19 @@ main {
     padding: 1rem;
 }
 
-.container img {
+/* set the style for the chart */
+.chart img {
     width: 700px;
     height: 400px;
+    padding: 5em;
+    margin-left: 2em;
 }
 
-.category {
-    font-size: larger;
+.flexbox {
+    display: flex;
 }
 
+/* set the style for the navigation bar */
 .navbar {
     background-color: #586F6B;
 }
