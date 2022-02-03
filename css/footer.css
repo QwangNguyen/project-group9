@@ -1,0 +1,13 @@
+footer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #586F6B;
+    display: flex;
+    padding: 15px;
+}
+
+footer p {
+    color: white;
+    margin-top: 10px;
+}
