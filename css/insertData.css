@@ -28,10 +28,10 @@ label {
     font-weight: bold;
 }
 input {
-    height: 4em;
+    height: 3em;
 }
 .textBox {
-    margin: 3% 5%;
+    margin: 2% 5%;
     width: 80%;
     border-radius: 5px;
 }
@@ -40,7 +40,7 @@ input {
 }
 .analyze {
     display: block;
-    margin: 7% auto;
+    margin: 5% auto;
     background-color: #7F9183;
     border: none;
     border-radius: 40px;
