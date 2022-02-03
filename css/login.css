@@ -3,51 +3,52 @@
 }
 
 body {
-    /* background-color: #CFC0BD; */
+    /* set the font for the body */
     font-family: 'Roboto', sans-serif;
 }
 
 main {
+    /* set the background and text style for the main part */
     background-color: #e0e0e0;
     text-align: center;
     height: 750px;
 }
 
 dl {
+    /* set the margin for the input bar to make it look nice */
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
 .col-sm-10 {
+    /* set the width for col-sm-2 class */
     width: 280px;
 }
 
 .form-group {
+    /* set the bottom margin for the input bar */
     margin-bottom: 0.5rem;
 }
 
 .col-sm-offset-2 {
+    /* set the top margin for col-sm-2 class */
     margin-top: 2rem;
 }
 
-.container {
-    max-width: 960px;
-    margin-left:auto;
-    margin-right: auto;
-    padding: 1rem;
-}
-
 .footprint {
+    /* set the style for login button */
     background-color: #7F9183;
     color: white;
     font-size: 25px;
 }
 
 .navbar {
+    /* set the background color for navigation bar */
     background-color: #586F6B;
 }
 
 .container {
+    /* set the property for flex box container */
     display: flex;
     justify-content: center;
     max-width: 500px;
@@ -58,5 +59,6 @@ dl {
 }
 
 #name {
+    /* set the top margin for the name  */
     margin-top: 5rem;
 }
