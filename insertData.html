@@ -25,21 +25,28 @@
       <a class="aboutUs" href="#"><button class="aboutUsButton">About Us</button></a>
     </header>
     <main>
-      <div class="container">
+      <div class="container-fluid">
         <div class="box-1">
           <img src="./img/JustEarth.png" alt="pixelated earth" class="earth">
-          <br>
-          <a class="aboutUs" href="#"><button class="analyze">analyze</button></a>
         </div>
         <div class="box-2">
-          <nav>
-            <ul class="tabMenu">
-              <li><a href="#">Vehicle</a></li>
+          <nav class="tabMenu">
+            <ul class="tabItems">
+              <li><a href="#" class="currentNav">Vehicle</a></li>
               <li><a href="#">Household</a></li>
               <li><a href="#">Waste</a></li>
               <li><a href="#">Electricity</a></li>
             </ul>
           </nav>
+          <form>
+            <label for="WeeklyMiles" class="formInput">Miles Driven Per Day:</label><br>
+            <input type="text" name="WeeklyMiles" class="textBox formInput"><br>
+            <label for="MilesPerGallon" class="formInput">Miles Per Gallon of Vehicle:</label><br>
+            <input type="text" name="WeeklyMiles" class="textBox formInput"><br>
+            <label for="PublicTransportation" class="formInput">Hours Spent on Public Transportation Daily:</label><br>
+            <input type="text" name="WeeklyMiles" class="textBox formInput">
+          </form>
+          <a href="./SustainabilityScore.html"><button class="analyze">Analyze</button></a>
         </div>
       </div>
     </main>
