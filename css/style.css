@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* navbar styling*/
 header {
     box-sizing: border-box;
@@ -60,4 +64,60 @@ footer {
 footer p {
     color: white;
     margin-top: 10px;
+}
+
+/* index styling */
+body {
+    /* set the font for the body */
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    /* set the font and margin for top level heading to make it look nice */
+    font-family: 'Raleway', 'Helvetica', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    /* set the margin for all the paragraphs */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.container {
+    /* set the property for flex box container */
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.footprint {
+    /* set the style for buttons */
+    background-color: #7F9183;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width:13em;
+    border-radius: 40px;
+}
+
+#menu {
+    /* set the background image for the main menu */
+    background-image: url("../img/background.jpeg");
+    height: 550px;
+}
+
+#menu .container {
+    /* set the left margin for the menu so that it is in the right place */
+    margin-left: 120px;
+}
+
+#mission {
+    /* set the background and line style for the mission text */
+    background-color: #e0e0e0;
+    line-height: 1.5;
 }
