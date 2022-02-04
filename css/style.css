@@ -1,3 +1,49 @@
+/* navbar styling*/
+header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #586F6B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+}
+li, a, button {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.links-nav {
+    list-style: none;
+}
+.links-nav li {
+    display: inline-block;
+    padding: 0px 25px;
+}
+.links-nav li a {
+    transition: all 0.15s ease-out 0.15s;
+}
+.links-nav li a:hover {
+    color: #CFC0BD;
+    text-decoration: underline;
+}
+.aboutUsButton {
+    background-color: rgba(127, 145, 131, 1);
+    border:none;
+    border-radius: 40px;
+    transition: all 0.10s ease-out 0.10s;
+    padding: 5px 15px;
+}
+.aboutUsButton:hover {
+    background-color: rgba(127, 145, 131, 0.2);
+}
+.logo {
+    max-height: 65px;
+}
+
 /* footer styling*/
 footer {
     box-sizing: border-box;
@@ -6,6 +52,9 @@ footer {
     display: flex;
     padding: 15px;
     padding-bottom: 0;
+    /*position:fixed;*/
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
