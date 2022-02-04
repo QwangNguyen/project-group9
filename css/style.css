@@ -1,8 +1,13 @@
+/* Universal styles *****************************/
 * {
     box-sizing: border-box;
 }
+body {
+    /* set the font for the body */
+    font-family: 'Roboto', sans-serif;
+}
 
-/* navbar styling*/
+/* navbar styling********************************/
 header {
     box-sizing: border-box;
     margin: 0;
@@ -48,7 +53,7 @@ li, a, button {
     max-height: 65px;
 }
 
-/* footer styling*/
+/* footer styling******************************/
 footer {
     box-sizing: border-box;
     margin: 0;
@@ -66,22 +71,17 @@ footer p {
     margin-top: 10px;
 }
 
-/* index styling */
-body {
-    /* set the font for the body */
-    font-family: 'Roboto', sans-serif;
-}
-
+/* index styling ***********************************/
 h1 {
     /* set the font and margin for top level heading to make it look nice */
-    font-family: 'Raleway', 'Helvetica', sans-serif;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
     font-weight: 300;
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
-p {
+.info {
     /* set the margin for all the paragraphs */
     margin-top: 0;
     margin-bottom: 1rem;
@@ -120,4 +120,56 @@ p {
     /* set the background and line style for the mission text */
     background-color: #e0e0e0;
     line-height: 1.5;
+}
+
+/* Login styling ********************************/
+.loginPage {
+    /* set the background and text style for the main part */
+    background-color: #e0e0e0;
+    text-align: center;
+    height: 750px;
+}
+
+dl {
+    /* set the margin for the input bar to make it look nice */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.col-sm-10 {
+    /* set the width for col-sm-2 class */
+    width: 280px;
+}
+
+.form-group {
+    /* set the bottom margin for the input bar */
+    margin-bottom: 0.5rem;
+}
+
+.col-sm-offset-2 {
+    /* set the top margin for col-sm-2 class */
+    margin-top: 2rem;
+}
+
+.login {
+    /* set the style for login button */
+    background-color: #7F9183;
+    color: white;
+    font-size: 25px;
+
+}
+.container {
+    /* set the property for flex box container */
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin-top:auto;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+#name {
+    /* set the top margin for the name  */
+    margin-top: 5rem;
 }
