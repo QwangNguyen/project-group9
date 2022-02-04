@@ -131,7 +131,7 @@ dl {
 /* index styling ***********************************/
 .missionInfo {
     /* set the font and margin for top level heading to make it look nice */
-    font-weight: 300;
+    font-weight: bold;
     font-size: 3rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
