@@ -37,18 +37,44 @@
       <div class="box-2">
         <nav class="tabMenu">
           <ul class="tabItems">
-            <li><a href="#" class="currentNav">Vehicle</a></li>
-            <li><a href="insertEnergy.html">Home Energy</a></li>
+            <li><a href="insertData.html">Vehicle</a></li>
+            <li><a href="#" class="currentNav">Home Energy</a></li>
             <li><a href="insertWaste.html">Waste</a></li>
           </ul>
         </nav>
         <form>
-          <label for="WeeklyMiles" class="formInput labelForm">Miles Driven Per Day:</label><br>
-          <input type="text" name="WeeklyMiles" class="textBox formInput"><br>
-          <label for="MilesPerGallon" class="formInput labelForm">Miles Per Gallon of Vehicle:</label><br>
-          <input type="text" name="WeeklyMiles" class="textBox formInput"><br>
-          <label for="PublicTransportation" class="formInput labelForm">Hours Spent on Public Transportation Daily:</label><br>
-          <input type="text" name="WeeklyMiles" class="textBox formInput">
+          <div>
+            <label for="NaturalGas" class="formInput labelForm">Natural Gas Usage:</label><br>
+            <input type="text" name="NaturalGas" class="textBox formInput">
+            <select class="selectForm">
+              <option>Dollars</option>
+              <option>Therms</option>
+            </select><br>
+          </div>
+          <div>
+            <label for="MilesPerGallon" class="formInput labelForm">Electricity:</label><br>
+            <input type="text" name="Electricity" class="textBox formInput">
+            <select class="selectForm">
+              <option>Dollars</option>
+              <option>kWh</option>
+            </select>
+          </div>
+          <div>
+            <label for="FuelOil" class="formInput labelForm">Fuel Oil:</label><br>
+            <input type="text" name="FuelOil" class="textBox formInput">
+            <select class="selectForm">
+              <option>Dollars</option>
+              <option>Gallons</option>
+            </select>
+          </div>
+          <div>
+            <label for="Propane" class="formInput labelForm">Propane:</label><br>
+            <input type="text" name="Propane" class="textBox formInput"> 
+            <select class="selectForm">
+              <option>Dollars</option>
+              <option>Gallons</option>
+            </select>
+          </div>
         </form>
         <a href="./SustainabilityScore.html"><button class="analyze roundButton">Analyze</button></a>
       </div>

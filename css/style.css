@@ -321,28 +321,43 @@ dl {
     flex: 1;
 }
 .earth {
-    margin-top: 8%;
+    margin-top: 15%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.fontChanger {
+    padding-top: 1%;
+    font-size: 2em;
+    margin-bottom: 1em;
 }
 .box-2 {
     background-color: #DDD5D0;
     flex: 1;
 }
 .labelForm {
-    font-size: 1.25em;
-    margin-top: 1em;
+    font-size: 1em;
     font-weight: bold;
 }
 .textBox {
-    margin: 1% 5%;
+    margin: 1.5% 5%;
     width: 80%;
     border-radius: 5px;
 }
 .formInput {
     margin-left: 10%;
-    height: 2.5em;
+    height: 2em;
+}
+.selectForm {
+    padding: 2px 10px;
+    display: block;
+    margin: 0 auto;
+}
+.checkbox{
+    margin-left: 15%;
+    margin-bottom: 3%;
+    height: 3em;
+    width: 3em;
 }
 .analyze {
     display: block;

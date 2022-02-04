@@ -38,19 +38,28 @@
         <nav class="tabMenu">
           <ul class="tabItems">
             <li><a href="insertData.html">Vehicle</a></li>
-            <li><a href="#" class="currentNav">Home Energy</a></li>
-            <li><a href="#">Waste</a></li>
+            <li><a href="insertEnergy.html">Home Energy</a></li>
+            <li><a href="#" class="currentNav">Waste</a></li>
           </ul>
         </nav>
         <form>
-          <label for="NaturalGas" class="formInput labelForm">Natural Gas Usage:</label><br>
-          <input type="text" name="NaturalGas" class="textBox formInput"><br>
-          <label for="MilesPerGallon" class="formInput labelForm">Electricity:</label><br>
-          <input type="text" name="Electricity" class="textBox formInput"><br>
-          <label for="FuelOil" class="formInput labelForm">Fuel Oil:</label><br>
-          <input type="text" name="FuelOil" class="textBox formInput">
-          <label for="Propane" class="formInput labelForm">Propane:</label><br>
-          <input type="text" name="Propane" class="textBox formInput">
+          <h1 class="titleOfPage fontChanger">Check off the Items you currently Recycle</h1>
+          <div>
+            <input type="checkbox" name="recyclePlastic" class="checkbox">
+            <label for="recyclePlasitc" class="labelForm">Plastic</label>
+          </div>
+          <div>
+            <input type="checkbox" name="recycleGlass" class="checkbox">
+            <label for="recycleGlass" class="labelForm">Glass</label>
+          </div>
+          <div>
+            <input type="checkbox" name="recycleAluminum" class="checkbox">
+            <label for="recycleAluminum" class="labelForm">Aluminum</label>
+          </div>
+          <div>
+            <input type="checkbox" name="recyclePaper" class="checkbox">
+            <label for="recyclePaper" class="labelForm">Paper</label>
+          </div>
         </form>
         <a href="./SustainabilityScore.html"><button class="analyze roundButton">Analyze</button></a>
       </div>
