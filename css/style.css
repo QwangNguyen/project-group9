@@ -126,7 +126,6 @@ dl {
 }
 
 
-
 /* index styling ***********************************/
 h1 {
     /* set the font and margin for top level heading to make it look nice */
@@ -170,11 +169,19 @@ h1 {
     margin-left: 120px;
 }
 
-#mission {
-    /* set the background and line style for the mission text */
-    background-color: #e0e0e0;
+
+.missionContainer div {
+     /* set the background and line style for the mission text */
     line-height: 1.5;
     text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+
+.document {
+    display: flex;
+    width: 960px;
 }
 
 
