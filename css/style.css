@@ -374,3 +374,22 @@ dl {
     font-weight: bold;
     text-decoration: underline;
 }
+
+/*About Us *****************/
+.aboutHeader {
+    color: #586F6B;
+    margin: 2rem;
+}
+
+.aboutText {
+    margin-left: 2rem;
+}
+
+figure {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+figcaption {
+    font-size: small;
+}
