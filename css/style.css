@@ -6,6 +6,12 @@ body {
     /* set the font for the body */
     font-family: 'Roboto', sans-serif;
 }
+.container {
+    display: flex;
+}
+.roundButton {
+    border-radius: 40px;
+}
 
 /* navbar styling********************************/
 header {
@@ -19,7 +25,6 @@ header {
     padding: 25px 10%;
 }
 li, a, button {
-    font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 20px;
     color: white;
@@ -42,7 +47,6 @@ li, a, button {
 .aboutUsButton {
     background-color: rgba(127, 145, 131, 1);
     border:none;
-    border-radius: 40px;
     transition: all 0.10s ease-out 0.10s;
     padding: 5px 15px;
 }
@@ -61,7 +65,6 @@ footer {
     display: flex;
     padding: 15px;
     padding-bottom: 0;
-    /*position:fixed;*/
     bottom: 0;
     width: 100%;
 }
@@ -69,57 +72,6 @@ footer {
 footer p {
     color: white;
     margin-top: 10px;
-}
-
-/* index styling ***********************************/
-h1 {
-    /* set the font and margin for top level heading to make it look nice */
-    font-family: 'Roboto', 'Helvetica', sans-serif;
-    font-weight: 300;
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-}
-
-.info {
-    /* set the margin for all the paragraphs */
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-.container {
-    /* set the property for flex box container */
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-}
-
-.footprint {
-    /* set the style for buttons */
-    background-color: #7F9183;
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    width:13em;
-    border-radius: 40px;
-}
-
-#menu {
-    /* set the background image for the main menu */
-    background-image: url("../img/background.jpeg");
-    height: 550px;
-}
-
-#menu .container {
-    /* set the left margin for the menu so that it is in the right place */
-    margin-left: 120px;
-}
-
-#mission {
-    /* set the background and line style for the mission text */
-    background-color: #e0e0e0;
-    line-height: 1.5;
 }
 
 /* Login styling ********************************/
@@ -156,11 +108,11 @@ dl {
     background-color: #7F9183;
     color: white;
     font-size: 25px;
-
+    padding: 5px 35px;
 }
-.container {
+
+.containerLogin {
     /* set the property for flex box container */
-    display: flex;
     justify-content: center;
     max-width: 500px;
     margin-top:auto;
@@ -168,10 +120,64 @@ dl {
     margin-right: auto;
     padding: 2rem;
 }
-
 #name {
     /* set the top margin for the name  */
     margin-top: 5rem;
+}
+
+
+
+/* index styling ***********************************/
+h1 {
+    /* set the font and margin for top level heading to make it look nice */
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.info {
+    /* set the margin for all the paragraphs */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.containerIndex {
+    /* set the property for flex box container */
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+.footprint {
+    /* set the style for buttons */
+    background-color: #7F9183;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width:13em;
+    border-radius: 40px;
+}
+
+#menu {
+    /* set the background image for the main menu */
+    background-image: url("../img/background.jpeg");
+    height: 550px;
+}
+
+#menu .containerIndex {
+    /* set the left margin for the menu so that it is in the right place */
+    margin-left: 120px;
+}
+
+#mission {
+    /* set the background and line style for the mission text */
+    background-color: #e0e0e0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
 
 /* dashboard css ****************************************/
 .avatar img {
@@ -192,7 +198,7 @@ dl {
     height: 200px;
 }
 
-#chart img {
+.chart img {
     /* set the style for the chart */
     width: 700px;
     height: 400px;
