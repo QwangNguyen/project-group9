@@ -12,7 +12,9 @@ body {
 .roundButton {
     border-radius: 40px;
 }
-
+main {
+    height: 85vh;
+}
 /* navbar styling********************************/
 header {
     box-sizing: border-box;
@@ -79,7 +81,6 @@ footer p {
     /* set the background and text style for the main part */
     background-color: #e0e0e0;
     text-align: center;
-    height: 750px;
 }
 
 dl {
@@ -127,10 +128,10 @@ dl {
 
 
 /* index styling ***********************************/
-h1 {
+.missionInfo {
     /* set the font and margin for top level heading to make it look nice */
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
@@ -139,6 +140,7 @@ h1 {
     /* set the margin for all the paragraphs */
     margin-top: 0;
     margin-bottom: 1rem;
+    font-size: 1.5em;
 }
 
 .containerIndex {
@@ -221,7 +223,6 @@ h1 {
 .TriviaBody {
     background-color: white;
 }
-
 .containerTrivia {
     justify-content: center;
     padding-top: 4rem;
@@ -229,16 +230,12 @@ h1 {
     padding-bottom: 4rem;
 }
 
-.containerTrivia3 {
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 4rem;
+.containerPadding {
     padding-left: 2rem;
-    padding-right: 2rem
+    padding-right: 2rem;
 }
 
-
-.containerTrivia3 div{
+.containerPadding div{
     justify-content: center;
 }
 
@@ -275,6 +272,7 @@ h1 {
 
 .question {
     font-weight: bold;
+    font-size: 2.5em;
 }
 
 .content {
@@ -292,3 +290,4 @@ h1 {
     padding: 20px;
 }
 
+/*Input Data*************/
