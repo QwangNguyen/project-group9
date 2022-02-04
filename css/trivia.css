@@ -30,9 +30,18 @@ main {
     border-radius: 40px;
 }
 
-.trivia {
+.triviagrn {
     background-color: #7F9183;
     color: white;
+    font-size: 25px;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.triviatan {
+    background-color: #DDD5D0;
+    color: black;
     font-size: 25px;
     width: 350px;
     height: 200px;
