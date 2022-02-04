@@ -17,7 +17,7 @@ main {
     height: 120vh;
 }
 
-@media (max-height:667px) {
+@media (max-height:700px) {
     main {
         height: 140vh;
     }
@@ -235,6 +235,8 @@ dl {
 .explanation {
     font-size: 1.25em;
 }
+
+
 @media (min-width:768px) {
     main {
         height: 100vh;
