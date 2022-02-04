@@ -8,38 +8,39 @@ body {
 }
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 .roundButton {
     border-radius: 40px;
 }
 main {
-    height: 100vh;
+    height: 120vh;
 }
 
-@media (min-width:768px) {
-/* navbar styling********************************/
+@media (max-height:667px) {
+    main {
+        height: 140vh;
+    }
+}
+
+/* header ***********************/
 header {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #586F6B;
     display: flex;
+    background-color: #586F6B;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 10%;
 }
 li, a, button {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     text-decoration: none;
 }
 .links-nav {
     list-style: none;
-}
-.links-nav li {
-    display: inline-block;
-    padding: 0px 25px;
 }
 .links-nav li a {
     transition: all 0.15s ease-out 0.15s;
@@ -48,20 +49,11 @@ li, a, button {
     color: #CFC0BD;
     text-decoration: underline;
 }
-.aboutUsButton {
-    background-color: rgba(127, 145, 131, 1);
-    border:none;
-    transition: all 0.10s ease-out 0.10s;
-    padding: 5px 15px;
-}
-.aboutUsButton:hover {
-    background-color: rgba(127, 145, 131, 0.2);
-}
 .logo {
-    max-height: 65px;
+    margin-left: 10%;
 }
 
-/* footer styling******************************/
+/**footer ****************/
 footer {
     box-sizing: border-box;
     margin: 0;
@@ -128,94 +120,68 @@ dl {
 }
 
 
-/* index styling ***********************************/
+/****Index/Home *************************/
 .missionInfo {
     /* set the font and margin for top level heading to make it look nice */
     font-weight: bold;
     font-size: 3rem;
-    margin-top: 0;
     margin-bottom: 0.5rem;
 }
-
 .info {
     /* set the margin for all the paragraphs */
     margin-top: 0;
     margin-bottom: 1rem;
-    font-size: 1.5em;
+    font-size: 1em;
 }
-
 .containerIndex {
     /* set the property for flex box container */
-    max-width: 960px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 2rem;
+    padding: .25rem;
+    background-color: #CFC0BD;
 }
 .footprint {
-    /* set the style for buttons */
-    background-color: #7F9183;
     color: white;
     font-size: 25px;
-    text-align: center;
-    width:13em;
-    border-radius: 40px;
 }
-
-#menu {
-    /* set the background image for the main menu */
-    background-image: url("../img/background.jpeg");
-    height: 550px;
-}
-
-#menu .containerIndex {
-    /* set the left margin for the menu so that it is in the right place */
-    margin-left: 120px;
+.document {
+    display: flex;
+    width: 100%;
 }
 .missionContainer div {
-     /* set the background and line style for the mission text */
+    /* set the background and line style for the mission text */
     line-height: 1.5;
     text-align: center;
     padding-top: 2em;
     padding-bottom: 2em;
 }
 
-.document {
-    display: flex;
-    width: 100%;
-}
 
-
-
-/* dashboard css ****************************************/
+/**********Dashboard*****************/
 .avatar img {
     /* set the style of the avatar */
-    width: 300px;
-    height: 200px;
+    display: block;
+    width: auto;
+    height: 20%;
     margin-top: 5em;
-    margin-bottom: 5em;
-    margin-left: 5em;
+    margin-left: 2.5em;
 }
-
+.chart img {
+    /* set the style for the chart */
+    width: 80%;
+    height: auto;
+}
 .dashboardContainer {
     /* set the text style for both emission containers */
     max-width: 100%;
-    margin-left: 30em;
-    margin-right: 30em;
+    margin-left: 2em;
+    margin-right: 2em;
     padding: 1rem;
     height: 6em;
 }
 
-.chart img {
-    /* set the style for the chart */
-    width: 700px;
-    height: 400px;
-    padding: 5em;
-    margin-left: 2em;
-}
-
-
-
-/*Trivia***************************************/
+/****************Trivia*****/
 .TriviaBody {
     background-color: white;
 }
@@ -224,188 +190,259 @@ dl {
     padding-top: 2rem;
     width: 100%;
 }
-
 .containerPadding {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-
 .containerPadding div{
     justify-content: center;
 }
-
 .start {
     background-color: #7F9183;
     color: white;
     font-size: 25px;
     border-radius: 40px;
 }
-
-.triviagrn {
+.triviaCategory {
     background-color: #7F9183;
     color: white;
     font-size: 25px;
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 120px;
     border-radius: 20px;
+    margin-bottom: 8%;
 }
-
-.triviatan {
+.buttonTan{
     background-color: #DDD5D0;
     color: black;
-    font-size: 25px;
-    width: 350px;
-    height: 200px;
-    border-radius: 20px;
 }
-
-.buttonbody {
-    padding-top: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+.buttonGreen{
+    background-color: #7F9183;
 }
-
 .question {
     font-weight: bold;
-    font-size: 2.5em;
 }
-
 .content {
     padding: 1rem;
 }
-
 .message {
     color: #7F9183;
     font-weight: bold;
 }
-
+.triviaBody {
+    background-color: #DDD5D0;
+}
 .explanation {
-    background-color: #DDD5D0;
-    border-radius: 20px;
-    padding: 20px;
+    font-size: 1.25em;
 }
+@media (min-width:768px) {
+    main {
+        height: 100vh;
+    }
+    /* navbar styling********************************/
+    header {
+        padding: 25px 10%;
+    }
+    li, a, button {
+        font-size: 20px;
+    }
+    .links-nav li {
+        display: inline-block;
+        padding: 0px 25px;
+    }
+    .logo {
+        margin-left: 0;
+        max-height: 65px;
+    }
 
-/*Input Data*************/
-.inputMain {
-    background-image: url("../img/ForestBackground.jpg");
-}
-.titleOfPage {
-    text-align: center;
-    font-weight: bold;
-    font-size: 6rem;
-    padding-top: 5%;
-}
-.containerInput {
-    justify-content: center;
-    margin-top: 9rem;
-}
-.score { /*part of sustainability score page*/
-    font-size: 9em;
-    text-align: center;
-    font-weight: bold;
-}
-.buttonCustom {
-    padding: 10px 30px;
-    background-color: #7F9183;
-    color: white;
-    font-size: 25px;
-}
+    /* index styling ***********************************/
+    .info {
+        font-size: 1.5em;
+    }
+    .containerIndex {
+        background-color: transparent;
+        padding: 2rem;
+    }
+    .footprint {
+        background-color: #7F9183;
+        text-align: center;
+        width:13em;
+    }
+    #menu {
+        background-image: url("../img/background.jpeg");
+        height: 550px;
+    }
+    #menu .containerIndex {
+        margin-left: 120px;
+    }
 
-/*Insert Data *****************/
-.container-fluid {
-    display: flex;
-    padding: 0px;
-    height: 100vh;
-}
-.box-1{
-    flex: 1;
-}
-.earth {
-    margin-top: 15%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.fontChanger {
-    padding-top: 1%;
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-.box-2 {
-    background-color: #DDD5D0;
-    flex: 1;
-}
-.labelForm {
-    font-size: 1em;
-    font-weight: bold;
-}
-.textBox {
-    margin: 1.5% 5%;
-    width: 80%;
-    border-radius: 5px;
-}
-.formInput {
-    margin-left: 10%;
-    height: 2em;
-}
-.selectForm {
-    padding: 2px 10px;
-    display: block;
-    margin: 0 auto;
-}
-.checkbox{
-    margin-left: 15%;
-    margin-bottom: 3%;
-    height: 3em;
-    width: 3em;
-}
-.analyze {
-    display: block;
-    margin: 5% auto;
-    background-color: #7F9183;
-    border: none;
-    padding: 10px 25px;
-    font-size: 1em;
-}
-.analyze:hover {
-    background-color:rgba(127, 145, 131, 0.4);
-}
-.tabItems li {
-    display: inline-block;
-    padding: 25px 30px;
-}
-.tabMenu {
-    background-color: #7F9183;
-    margin-bottom: 5%;
-}
-.tabItems li a {
-    transition: all 0.15s ease-out 0.15s;
-}
-.tabItems li a:hover {
-    color: #CFC0BD;
-    text-decoration: underline;
-}
-.currentNav {
-    font-weight: bold;
-    text-decoration: underline;
-}
+    /* dashboard css ****************************************/
+    .avatar img {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 5em;
+    }
+    .dashboardContainer {
+        /* set the text style for both emission containers */
+        margin-left: 30em;
+        margin-right: 30em;
+    }
+    .chart img {
+        /* set the style for the chart */
+        width: 700px;
+        height: 400px;
+        padding: 5em;
+        margin-left: 2em;
+    }
 
-/*About Us *****************/
-.aboutHeader {
-    color: #586F6B;
-    margin: 2rem;
-}
+    /*Trivia***************************************/
+    .triviaCategory {
+        margin-bottom: 0;
+        font-size: 25px;
+        width: 350px;
+        height: 200px;
+    }
+    .buttonbody {
+        padding-top: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .question {
+        font-size: 2.5em;
+    }
+    .triviaBody {
+        background-color: transparent;
+    }
+    .explanation {
+        background-color: #DDD5D0;
+        border-radius: 20px;
+        padding: 20px;
+    }
 
-.aboutText {
-    margin-left: 2rem;
-}
 
-figure {
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-}
 
-figcaption {
-    font-size: small;
-}
+
+    /*Input Data*************/
+    .inputMain {
+        background-image: url("../img/ForestBackground.jpg");
+    }
+    .titleOfPage {
+        text-align: center;
+        font-weight: bold;
+        font-size: 6rem;
+        padding-top: 5%;
+    }
+    .containerInput {
+        justify-content: center;
+        margin-top: 9rem;
+    }
+    .score { /*part of sustainability score page*/
+        font-size: 9em;
+        text-align: center;
+        font-weight: bold;
+    }
+    .buttonCustom {
+        padding: 10px 30px;
+        background-color: #7F9183;
+        color: white;
+        font-size: 25px;
+    }
+
+    /*Insert Data *****************/
+    .container-fluid {
+        display: flex;
+        padding: 0px;
+        height: 100vh;
+    }
+    .box-1{
+        flex: 1;
+    }
+    .earth {
+        margin-top: 15%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fontChanger {
+        padding-top: 1%;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .box-2 {
+        background-color: #DDD5D0;
+        flex: 1;
+    }
+    .labelForm {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .textBox {
+        margin: 1.5% 5%;
+        width: 80%;
+        border-radius: 5px;
+    }
+    .formInput {
+        margin-left: 10%;
+        height: 2em;
+    }
+    .selectForm {
+        padding: 2px 10px;
+        display: block;
+        margin: 0 auto;
+    }
+    .checkbox{
+        margin-left: 15%;
+        margin-bottom: 3%;
+        height: 3em;
+        width: 3em;
+    }
+    .analyze {
+        display: block;
+        margin: 5% auto;
+        background-color: #7F9183;
+        border: none;
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+    .analyze:hover {
+        background-color:rgba(127, 145, 131, 0.4);
+    }
+    .tabItems li {
+        display: inline-block;
+        padding: 25px 30px;
+    }
+    .tabMenu {
+        background-color: #7F9183;
+        margin-bottom: 5%;
+    }
+    .tabItems li a {
+        transition: all 0.15s ease-out 0.15s;
+    }
+    .tabItems li a:hover {
+        color: #CFC0BD;
+        text-decoration: underline;
+    }
+    .currentNav {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    /*About Us *****************/
+    .aboutHeader {
+        color: #586F6B;
+        margin: 2rem;
+    }
+
+    .aboutText {
+        margin-left: 2rem;
+    }
+
+    figure {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    figcaption {
+        font-size: small;
+    }
 }
