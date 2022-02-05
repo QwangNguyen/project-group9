@@ -96,12 +96,6 @@ footer p {
     text-align: center;
 }
 
-dl {
-    /* set the margin for the input bar to make it look nice */
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
 .col-sm-10 {
     /* set the width for col-sm-2 class */
     width: 280px;
@@ -442,6 +436,7 @@ form{
         font-size: 25px;
         width: 350px;
         height: 200px;
+        font-weight: bold;
     }
     .buttonbody {
         padding-top: 4rem;
