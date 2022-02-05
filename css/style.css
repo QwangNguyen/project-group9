@@ -235,6 +235,13 @@ footer p {
     margin-bottom: 8%;
     font-weight: bold;
 }
+
+.buttonbody a {
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .buttonTan{
     background-color: #DDD5D0;
     color: black;
@@ -438,12 +445,6 @@ form{
     }
     .buttonbody {
         padding-top: 4rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .buttonbody a {
-        padding-top: 5rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
