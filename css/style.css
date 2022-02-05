@@ -239,9 +239,7 @@ footer p {
     background-color: #DDD5D0;
     color: black;
 }
-.buttonGreen{
-    background-color: #7F9183;
-}
+
 .question {
     font-weight: bold;
 }
@@ -443,6 +441,13 @@ form{
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+    .buttonbody a {
+        padding-top: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .question {
         font-size: 2.5em;
     }
