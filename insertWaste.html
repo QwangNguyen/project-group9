@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head profile="http://www.w3.org/2005/10/profile">
+<head>
   <link rel="icon" type="image/png" href="./img/icon.png">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
               <li><a href="./index.html" aria-label="Home">Home</a></li>
               <li><a href="./Trivia1.html" aria-label="Trivia">Trivia</a></li>
               <li><a href="./dashboard.html" aria-label="Dashboard">Dashboard</a></li>
-              <li><a href="./inputData.html" aria-currrent="page" class="active" aria-label="Input Data">Input
+              <li><a href="./inputData.html" class="active" aria-label="Input Data">Input
                       Data</a></li>
               <li><a href="./about.html" aria-label="About Us">About Us</a></li>
           </ul>
@@ -45,23 +45,25 @@
         <form>
           <h1 class="titleOfPage fontChanger">Check off the Items you currently Recycle</h1>
           <div>
-            <input type="checkbox" name="recyclePlastic" class="checkbox">
-            <label for="recyclePlasitc" class="labelForm">Plastic</label>
+            <input id="recyclePlastic" type="checkbox" name="recyclePlastic" class="checkbox">
+            <label for="recyclePlastic" class="labelForm">Plastic</label>
           </div>
           <div>
-            <input type="checkbox" name="recycleGlass" class="checkbox">
+            <input id="recycleGlass" type="checkbox" name="recycleGlass" class="checkbox">
             <label for="recycleGlass" class="labelForm">Glass</label>
           </div>
           <div>
-            <input type="checkbox" name="recycleAluminum" class="checkbox">
+            <input id="recycleAluminum" type="checkbox" name="recycleAluminum" class="checkbox">
             <label for="recycleAluminum" class="labelForm">Aluminum</label>
           </div>
           <div>
-            <input type="checkbox" name="recyclePaper" class="checkbox">
+            <input id="recyclePaper" type="checkbox" name="recyclePaper" class="checkbox">
             <label for="recyclePaper" class="labelForm">Paper</label>
           </div>
         </form>
-        <a href="./SustainabilityScore.html"><button class="analyze roundButton">Analyze</button></a>
+        <div class="text-center">
+        <a href="./SustainabilityScore.html" class="analyze roundButton">Analyze</a>
+        </div>
       </div>
     </div>
   </main>
