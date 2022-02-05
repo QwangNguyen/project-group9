@@ -3,12 +3,12 @@
     box-sizing: border-box;
 }
 body {
-    /* set the font for the body */
     font-family: 'Roboto', sans-serif;
 }
 .container {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .roundButton {
     border-radius: 40px;
@@ -16,10 +16,25 @@ body {
 main {
     height: 120vh;
 }
+.centerMain {
+    text-align: center;
+    align-items: center;
+}
 .currentNav {
     font-weight: bold;
     text-decoration: underline;
 }
+.d-flex {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .start {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Media query for smaller than usual phones devices**********/
 @media (max-height:720px) {
     main {
         height: 140vh;
@@ -38,12 +53,14 @@ header {
 }
 li, a, button {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
 }
 .links-nav {
     list-style: none;
+    margin-right: 30px;
+    margin-top: 20px;
 }
 .links-nav li a {
     transition: all 0.15s ease-out 0.15s;
@@ -79,12 +96,6 @@ footer p {
     text-align: center;
 }
 
-dl {
-    /* set the margin for the input bar to make it look nice */
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
 .col-sm-10 {
     /* set the width for col-sm-2 class */
     width: 280px;
@@ -117,17 +128,17 @@ dl {
     margin-right: auto;
     padding: 2rem;
 }
-#name {
+.name {
     /* set the top margin for the name  */
     margin-top: 5rem;
 }
 
 
-/****Index/Home *************************/
+/****Index/Home *************************/ 
 .missionInfo {
     /* set the font and margin for top level heading to make it look nice */
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 .info {
@@ -145,7 +156,7 @@ dl {
     background-color: #CFC0BD;
 }
 .footprint {
-    color: white;
+    color: black;
     font-size: 25px;
 }
 .document {
@@ -159,20 +170,28 @@ dl {
     padding-top: 2em;
     padding-bottom: 2em;
 }
-
+.menu .containerIndex {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.menu:first-child {
+    margin-top: 20px;
+}
 
 /**********Dashboard*****************/
 .avatar img {
     /* set the style of the avatar */
     display: block;
     width: auto;
-    height: 20%;
-    margin-top: 5em;
+    height: 200px;
+    margin-top: 2.5em;
     margin-left: 2.5em;
+    margin-bottom: 1em;
 }
 .chart img {
     /* set the style for the chart */
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 .dashboardContainer {
@@ -214,14 +233,13 @@ dl {
     height: 120px;
     border-radius: 20px;
     margin-bottom: 8%;
+    font-weight: bold;
 }
 .buttonTan{
     background-color: #DDD5D0;
     color: black;
 }
-.buttonGreen{
-    background-color: #7F9183;
-}
+
 .question {
     font-weight: bold;
 }
@@ -235,6 +253,7 @@ dl {
 .triviaBody {
     background-color: #DDD5D0;
 }
+
 .explanation {
     font-size: 1.25em;
 }
@@ -259,7 +278,9 @@ dl {
     color: white;
     font-size: 25px;
 }
-.score { /*part of sustainability score page*/
+
+/*part of sustainability score page*/
+.score {
     font-size: 5em;
     text-align: center;
     font-weight: bold;
@@ -290,28 +311,34 @@ dl {
     height: 2.5em;
 }
 .analyze {
-    display: block;
-    margin: 15% auto;
     background-color: #7F9183;
     border: none;
-    padding: 10px 25px;
-    font-size: 1em;
+    padding: 20px 30px;
+    font-size: 1.25em;
+    color: white;
+}
+form{
+    margin-bottom: 10%;
 }
 .analyze:hover {
     background-color:rgba(127, 145, 131, 0.4);
+    color:white;
 }
 .box-2 {
     background-color: #DDD5D0;
     flex: 1;
+    align-items: center;
+    justify-content: center;
 }
 .tabItems li {
     list-style: none;
-    padding: 0px 6px;
+    padding: 3px 6px;
 }
 .tabMenu {
     background-color: #7F9183;
     padding-bottom: 2%;
     margin-bottom: 10%;
+    padding-top: 3%;
 }
 .tabItems li a {
     font-size: 18px;
@@ -338,10 +365,13 @@ dl {
     width: 3em;
 }
 
+
+/***************Larger Screens Styling ******/
 @media (min-width:768px) {
     main {
         height: 100vh;
     }
+
     /* navbar styling********************************/
     header {
         padding: 25px 10%;
@@ -370,12 +400,13 @@ dl {
         background-color: #7F9183;
         text-align: center;
         width:13em;
+        color: white;
     }
-    #menu {
+    .menu {
         background-image: url("../img/background.jpeg");
         height: 550px;
     }
-    #menu .containerIndex {
+    .menu .containerIndex {
         margin-left: 120px;
     }
 
@@ -410,6 +441,13 @@ dl {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+    .buttonbody a {
+        padding-top: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .question {
         font-size: 2.5em;
     }
@@ -476,7 +514,7 @@ dl {
     }
     .tabItems li {
         display: inline-block;
-        padding: 25px 30px;
+        padding: 0px 30px 25px;
     }
     
     .tabMenu {

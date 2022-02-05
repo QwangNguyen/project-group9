@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head profile="http://www.w3.org/2005/10/profile">
+<head>
     <link rel="icon" type="image/png" href="./img/icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,40 +21,34 @@
                     <li><a href="./index.html" aria-label="Home">Home</a></li>
                     <li><a href="./Trivia1.html" aria-label="Trivia">Trivia</a></li>
                     <li><a href="./dashboard.html" aria-label="Dashboard">Dashboard</a></li>
-                    <li><a href="./inputData.html" aria-currrent="page" class="active" aria-label="Input Data">Input
+                    <li><a href="./inputData.html" class="active" aria-label="Input Data">Input
                             Data</a></li>
                     <li><a href="./about.html" aria-label="About Us">About Us</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main class="loginPage">
-        <div aria-label="Log in Info">
+    <main class="loginPage centerMain">
         <form class="form-horizontal">
             <div class="container containerLogin">
-                <dl>
-                    <dd>
-                        <div class="form-group"><label class="control-label col-sm-2" for="name"></label>
-                            <div class="col-sm-10" aria-label="User Name"> <input type="name" class="form-control" id="name"
-                                    placeholder="User Name"> </div>
-                        </div>
-                    </dd>
-                    <dd>
-                        <div class="form-group"> <label class="control-label col-sm-2" for="password"></label>
-                            <div class="col-sm-10" aria-label="Password"> <input type="password" class="form-control" id="password"
-                                    placeholder="Password"> </div>
-                        </div>
-                    </dd>
-                    <dd>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10"> <button type="button"
-                                    class="btn btn-sm login roundButton" aria-label="Log in Button">Log in</button> </div>
-                        </div>
-                    </dd>
-                </dl>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <label for="UserName">User Name</label>
+                        <input type="text" class="form-control" name="UserName" id="UserName" placeholder="UserName">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <label for="password">Password</label>
+                        <input type="text" class="form-control" name="password" id="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10"> <button type="button"
+                            class="btn btn-sm login roundButton" aria-label="Log in Button">Log in</button></div>
+                </div>
             </div>
         </form>
-    </div>
     </main>
     <footer>
         <p>&copy; This webpage was created by INFO 340 Group 9: Vivian, Kaarina, Winni, Quang.</p>

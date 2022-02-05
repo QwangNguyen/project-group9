@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head profile="http://www.w3.org/2005/10/profile">
+<head>
     <link rel="icon" type="image/png" href="./img/icon.png">
     <meta charset="UTF-8">
     <meta name="author" content="Winni Li, Vivian Yu, Kaarina Tulleau, Quang Nguyen">
@@ -23,7 +23,7 @@
                     <li><a href="./index.html" aria-label="Home">Home</a></li>
                     <li><a href="./Trivia1.html" aria-label="Trivia">Trivia</a></li>
                     <li><a href="./dashboard.html" aria-label="Dashboard">Dashboard</a></li>
-                    <li><a href="./inputData.html" aria-currrent="page" class="active" aria-label="Input Data">Input
+                    <li><a href="./inputData.html" class="active" aria-label="Input Data">Input
                             Data</a></li>
                     <li><a href="./about.html" aria-label="About Us">About Us</a></li>
                 </ul>
@@ -32,24 +32,15 @@
     </header>
     <main>
         <div role="navigation" aria-label="Main Menu">
-            <section id="menu">
+            <section class="menu">
                 <div class="containerIndex">
-                    <a href="dashboard.html">
-                        <button type="button" class="btn btn-sm footprint roundButton" aria-label="See Dashboard">See
-                            Dashboard</button>
-                    </a>
+                    <a href="dashboard.html" class="btn footprint roundButton">See Dashboard</a>
                 </div>
                 <div class="containerIndex">
-                    <a href="inputData.html">
-                        <button type="button" class="btn btn-sm footprint roundButton" aria-label="Input Your Data">Input Your
-                            Data</button>
-                    </a>
+                    <a href="inputData.html" class="btn footprint roundButton">Input Your Data</a>
                 </div>
                 <div class="containerIndex">
-                    <a href="Trivia1.html">
-                        <button type="button" class="btn btn-sm footprint roundButton" aria-label="Play TriviaGame">Play
-                            TriviaGame</button>
-                    </a>
+                    <a href="Trivia1.html" class="btn footprint roundButton">Play TriviaGame</a>
                 </div>
             </section>
         </div>
