@@ -233,6 +233,7 @@ footer p {
     height: 120px;
     border-radius: 20px;
     margin-bottom: 8%;
+    font-weight: bold;
 }
 .buttonTan{
     background-color: #DDD5D0;
@@ -436,7 +437,6 @@ form{
         font-size: 25px;
         width: 350px;
         height: 200px;
-        font-weight: bold;
     }
     .buttonbody {
         padding-top: 4rem;
