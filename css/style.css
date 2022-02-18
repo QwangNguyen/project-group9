@@ -14,32 +14,23 @@ body {
     border-radius: 40px;
 }
 main {
-    height: 120vh;
+    height: 130vh;
 }
 .centerMain {
     text-align: center;
     align-items: center;
 }
 .currentNav {
-    font-weight: bold;
     text-decoration: underline;
 }
-.d-flex {
+.centerElement {
     margin-left: auto;
     margin-right: auto;
 }
-
-.container .start {
-    margin-left: auto;
-    margin-right: auto;
+.bold {
+    font-weight: bold;
 }
 
-/*Media query for smaller than usual phones devices**********/
-@media (max-height:720px) {
-    main {
-        height: 140vh;
-    }
-}
 
 /* header ***********************/
 header {
