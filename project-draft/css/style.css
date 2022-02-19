@@ -7,7 +7,6 @@ body {
 }
 .container {
     flex-wrap: wrap;
-    align-items: center;
 }
 .roundButton {
     border-radius: 40px;
@@ -17,7 +16,6 @@ main {
 }
 .centerMain {
     text-align: center;
-    align-items: center;
 }
 .currentNav {
     text-decoration: underline;
@@ -30,9 +28,46 @@ main {
     font-weight: bold;
 }
 
+/* Set align-items to center********/
+.container, .centerMain, header, .box-2 {
+    align-items: center;
+}
+
 /* Set display to flex**************/
 .container, header, footer, .document, .container-fluid {
     display: flex;
+}
+
+/* Set background color to #586F6B***/
+header, footer {
+    background-color: #586F6B;
+}
+
+/* Set background color to #CFC0BD***/
+.containerIndex, .inputMain, .container-fluid {
+    background-color: #CFC0BD;
+}
+
+/* Set background color to #7F9183***/
+.login, .start, .triviaCategory, .buttonCustom, .analyze, .tabMenu, .footprint {
+    background-color: #7F9183;
+}
+
+/* Set background color to white****/
+.loginPage, .TriviaBody {
+    background-color: white;
+}
+
+/* Set backgground color to #DDD5D0***/
+.triviaBody, .box-2, .explanation {
+    background-color: #DDD5D0;
+}
+
+
+/* Set common styling for green buttons***/
+.login, .start, .triviaCategory, .buttonCustom {
+    color: white;
+    font-size: 25px;
 }
 
 
@@ -41,9 +76,7 @@ header {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #586F6B;
     justify-content: space-between;
-    align-items: center;
 }
 li, a, button {
     font-weight: bold;
@@ -71,7 +104,6 @@ li, a, button {
 footer {
     box-sizing: border-box;
     margin: 0;
-    background-color: #586F6B;
     padding: 15px;
     padding-bottom: 0;
     bottom: 0;
@@ -84,8 +116,7 @@ footer p {
 
 /* Login styling ********************************/
 .loginPage {
-    /* set the background and text style for the main part */
-    background-color: #e0e0e0;
+    /* set the text style for the main part */
     text-align: center;
 }
 
@@ -105,10 +136,6 @@ footer p {
 }
 
 .login {
-    /* set the style for login button */
-    background-color: #7F9183;
-    color: white;
-    font-size: 25px;
     padding: 5px 35px;
 }
 
@@ -146,7 +173,6 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     padding: .25rem;
-    background-color: #CFC0BD;
 }
 .footprint {
     color: black;
@@ -196,9 +222,6 @@ footer p {
 }
 
 /****************Trivia*****/
-.TriviaBody {
-    background-color: white;
-}
 .containerTrivia {
     justify-content: center;
     padding-top: 2rem;
@@ -212,15 +235,9 @@ footer p {
     justify-content: center;
 }
 .start {
-    background-color: #7F9183;
-    color: white;
-    font-size: 25px;
     border-radius: 40px;
 }
 .triviaCategory {
-    background-color: #7F9183;
-    color: white;
-    font-size: 25px;
     width: 300px;
     height: 120px;
     border-radius: 20px;
@@ -228,7 +245,7 @@ footer p {
     font-weight: bold;
 }
 
-.buttonTan{
+.buttonTan {
     background-color: #DDD5D0;
     color: black;
 }
@@ -252,18 +269,15 @@ footer p {
     font-weight: bold;
 }
 
-.triviaBody {
+/*.triviaBody {
     background-color: #DDD5D0;
-}
+}*/
 
 .explanation {
     font-size: 1.25em;
 }
 
 /*************Input Data *******************/
-.inputMain {
-    background-color: #CFC0BD;
-}
 .titleOfPage {
     text-align: center;
     font-weight: bold;
@@ -276,9 +290,6 @@ footer p {
 }
 .buttonCustom {
     padding: 10px 30px;
-    background-color: #7F9183;
-    color: white;
-    font-size: 25px;
 }
 
 /*part of sustainability score page*/
@@ -293,7 +304,6 @@ footer p {
     flex-wrap: wrap;
     padding: 0px;
     height: 100%;
-    background-color: #CFC0BD;
 }
 .earth {
     display: none;
@@ -312,7 +322,6 @@ footer p {
     height: 2.5em;
 }
 .analyze {
-    background-color: #7F9183;
     border: none;
     padding: 20px 30px;
     font-size: 1.25em;
@@ -326,9 +335,8 @@ form{
     color:white;
 }
 .box-2 {
-    background-color: #DDD5D0;
+    /*background-color: #DDD5D0;*/
     flex: 1;
-    align-items: center;
     justify-content: center;
 }
 .tabItems li {
@@ -336,7 +344,6 @@ form{
     padding: 3px 6px;
 }
 .tabMenu {
-    background-color: #7F9183;
     padding-bottom: 2%;
     margin-bottom: 10%;
     padding-top: 3%;
@@ -398,7 +405,6 @@ form{
         padding: 2rem;
     }
     .footprint {
-        background-color: #7F9183;
         text-align: center;
         width:13em;
         color: white;
@@ -450,7 +456,7 @@ form{
         background-color: transparent;
     }
     .explanation {
-        background-color: #DDD5D0;
+        /*background-color: #DDD5D0;*/
         border-radius: 20px;
         padding: 20px;
     }
