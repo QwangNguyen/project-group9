@@ -6,7 +6,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .container {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -31,13 +30,17 @@ main {
     font-weight: bold;
 }
 
+/* Set display to flex**************/
+.container, header, footer, .document, .container-fluid {
+    display: flex;
+}
+
 
 /* header ***********************/
 header {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    display: flex;
     background-color: #586F6B;
     justify-content: space-between;
     align-items: center;
@@ -69,7 +72,6 @@ footer {
     box-sizing: border-box;
     margin: 0;
     background-color: #586F6B;
-    display: flex;
     padding: 15px;
     padding-bottom: 0;
     bottom: 0;
@@ -151,7 +153,6 @@ footer p {
     font-size: 25px;
 }
 .document {
-    display: flex;
     width: 100%;
 }
 .missionContainer div {
@@ -289,7 +290,6 @@ footer p {
 
 /***Insert Data *************************/
 .container-fluid {
-    display: flex;
     flex-wrap: wrap;
     padding: 0px;
     height: 100%;
