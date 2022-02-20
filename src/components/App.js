@@ -1,8 +1,9 @@
 import React, { useState } from 'react'; 
+import {InputData} from './InputData';
 
 function App() {
   return (
-    <h1>Your mom</h1>
+    <InputData/>
   );
 }
 
