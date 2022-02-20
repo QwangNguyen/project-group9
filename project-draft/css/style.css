@@ -49,7 +49,7 @@ header, footer {
 }
 
 /* Set background color to #7F9183***/
-.login, .start, .triviaCategory, .buttonCustom, .analyze, .tabMenu, .footprint {
+.login, .start, .triviaCategory, .buttonCustom, .analyze, .tabMenu {
     background-color: #7F9183;
 }
 
@@ -62,7 +62,6 @@ header, footer {
 .triviaBody, .box-2, .explanation {
     background-color: #DDD5D0;
 }
-
 
 /* Set common styling for green buttons***/
 .login, .start, .triviaCategory, .buttonCustom {
@@ -408,6 +407,7 @@ form{
         text-align: center;
         width:13em;
         color: white;
+        background-color: #7F9183;
     }
     .menu {
         background-image: url("../img/background.jpeg");
