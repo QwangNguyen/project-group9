@@ -26,10 +26,13 @@ function App() {
           <Route path="insertVehicle" element={<InsertVehicle />} />
           <Route index element={<InsertVehicle/>} />
         </Route>
-        <Route path="trivia1" element={<Trivia1 />} />
-        <Route path="trivia2" element={<Trivia2 />} />
-        <Route path="trivia3" element={<Trivia3 />} />
-        <Route path="trivia4" element={<Trivia4 />} />
+        <Route path="trivia1" element={<Trivia1 />}>
+          <Route path="trivia2" element={<Trivia2 />}>
+            <Route path="trivia3" element={<Trivia3 />}>
+              <Route path="trivia4" element={<Trivia4 />} />
+            </Route>
+          </Route>
+        </Route>
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
         <Route path="dashboard" element={<Dashboard />}/>
       </Routes>
