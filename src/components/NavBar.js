@@ -9,7 +9,7 @@ export default function NavBar() {
                     <div role="navigation" aria-label="Navigation Bar">
                         <ul className="links-nav">
                             <li><Link to="" aria-label="Home">Home</Link></li>
-                            <li><Link to="trivia" aria-label="Trivia">Trivia</Link></li>
+                            <li><Link to="trivia1" aria-label="Trivia">Trivia</Link></li>
                             <li><Link to="dashboard" aria-label="Dashboard">Dashboard</Link></li>
                             <li><Link to="inputData" aria-label="Input Data">Input Data</Link></li>
                             <li><Link to="" aria-label="About Us">About Us</Link></li>

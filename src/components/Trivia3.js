@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function Trivia3() {
     return (
@@ -25,7 +26,7 @@ export function Trivia3() {
                     </div>
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <Link to="./Trivia4.html" className="btn btn-lg triviaCategory">All of the above</Link>
+                            <Link to="/Trivia4" className="btn btn-lg triviaCategory">All of the above</Link>
                         </div>
                     </div>
                 </div>

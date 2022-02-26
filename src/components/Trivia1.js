@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function Trivia1() {
     return(
@@ -8,7 +9,7 @@ export function Trivia1() {
                     <p><strong>Test your knowledge and get 50 coins for each correct answer!</strong></p>
                 </div>
                 <div className="container containerTrivia">
-                    <Link to="./Trivia2.html" className="btn btn-lg start centerElement">Start!</Link>
+                    <Link to="/Trivia2" className="btn btn-lg start centerElement">Start!</Link>
                 </div>
             </main>
         </div>
