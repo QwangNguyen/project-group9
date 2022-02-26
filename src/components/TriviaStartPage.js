@@ -9,7 +9,7 @@ export function TriviaStartPage() {
                     <p><strong>Test your knowledge and get 50 coins for each correct answer!</strong></p>
                 </div>
                 <div className="container containerTrivia">
-                    <Link to="/trivia2" className="btn btn-lg start centerElement">Start!</Link>
+                    <Link to="/triviaCategory" className="btn btn-lg start centerElement">Start!</Link>
                 </div>
             </main>
         </div>

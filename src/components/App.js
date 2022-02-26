@@ -10,7 +10,7 @@ import { InsertWaste } from './InsertWaste';
 import { SustainabilityScore } from './SustainabilityScore';
 import { Dashboard } from "./Dashboard";
 import { TriviaStartPage }  from './TriviaStartPage';
-import { Trivia2 } from './Trivia2';
+import { TriviaCategory } from './TriviaCategory';
 import { Trivia3 } from './Trivia3';
 import { Trivia4 } from './Trivia4';
 import { Home } from './Home';
@@ -31,7 +31,7 @@ function App(props) {
           <Route index element={<InsertVehicle/>} />
         </Route>
         <Route path="triviaStartPage" element={<TriviaStartPage />} />
-        <Route path="trivia2" element={<Trivia2 />} />
+        <Route path="triviaCategory" element={<TriviaCategory />} />
         <Route path="trivia3" element={<Trivia3 />} />
         <Route path="trivia4" element={<Trivia4 />} />
         <Route path="incorrect" element={<IncorrectAnswer />} />
