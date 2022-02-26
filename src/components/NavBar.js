@@ -10,7 +10,7 @@ export default function NavBar() {
                         <ul className="links-nav">
                             <li><Link to="" aria-label="Home">Home</Link></li>
                             <li><Link to="" aria-label="Trivia">Trivia</Link></li>
-                            <li><Link to="" aria-label="Dashboard">Dashboard</Link></li>
+                            <li><Link to="dashboard" aria-label="Dashboard">Dashboard</Link></li>
                             <li><Link to="inputData" aria-label="Input Data">Input Data</Link></li>
                             <li><Link to="" aria-label="About Us">About Us</Link></li>
                         </ul>

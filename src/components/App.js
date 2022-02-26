@@ -8,6 +8,7 @@ import { InsertVehicle } from './InsertVehicle';
 import { InsertEnergy } from './InsertEnergy';
 import { InsertWaste } from './InsertWaste';
 import { SustainabilityScore } from './SustainabilityScore';
+import { Dashboard } from "./Dashboard";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route index element={<InsertVehicle/>} />
         </Route>
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
+        <Route path="dashboard" element={<Dashboard />}/>
       </Routes>
       <Footer/>
     </>
