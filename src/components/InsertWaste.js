@@ -3,22 +3,22 @@ import React from 'react';
 export function InsertWaste() {
     return(
         <form>
-          <h1 class="titleOfPage fontChanger">Check off the Items you currently Recycle</h1>
+          <h1 className="titleOfPage fontChanger">Check off the Items you currently Recycle</h1>
           <div>
-            <input id="recyclePlastic" type="checkbox" name="recyclePlastic" class="checkbox"/>
-            <label for="recyclePlastic" class="labelForm">Plastic</label>
+            <input id="recyclePlastic" type="checkbox" name="recyclePlastic" className="checkbox"/>
+            <label for="recyclePlastic" className="labelForm">Plastic</label>
           </div>
           <div>
-            <input id="recycleGlass" type="checkbox" name="recycleGlass" class="checkbox"/>
-            <label for="recycleGlass" class="labelForm">Glass</label>
+            <input id="recycleGlass" type="checkbox" name="recycleGlass" className="checkbox"/>
+            <label for="recycleGlass" className="labelForm">Glass</label>
           </div>
           <div>
-            <input id="recycleAluminum" type="checkbox" name="recycleAluminum" class="checkbox"/>
-            <label for="recycleAluminum" class="labelForm">Aluminum</label>
+            <input id="recycleAluminum" type="checkbox" name="recycleAluminum" className="checkbox"/>
+            <label for="recycleAluminum" className="labelForm">Aluminum</label>
           </div>
           <div>
-            <input id="recyclePaper" type="checkbox" name="recyclePaper" class="checkbox"/>
-            <label for="recyclePaper" class="labelForm">Paper</label>
+            <input id="recyclePaper" type="checkbox" name="recyclePaper" className="checkbox"/>
+            <label for="recyclePaper" className="labelForm">Paper</label>
           </div>
         </form>
     );

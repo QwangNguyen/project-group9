@@ -6,12 +6,12 @@ export function Dashboard() {
         <div>
         
             <main>
-                <div class="container">
+                <div className="container">
                     < Avatar />
                 </div>       
 
-                <div class="dashboardContainer">
-                    <p class="category bold">Net Emissions</p>
+                <div className="dashboardContainer">
+                    <p className="category bold">Net Emissions</p>
                     <p>130 CO2 Metrics Tons
                     </p>
                 </div>
