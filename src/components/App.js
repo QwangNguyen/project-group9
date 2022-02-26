@@ -20,12 +20,16 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="inputData" element={<InputData />} />
-        <Route path="insertData" element ={<InsertData />}>
+        <Route path="insertData" element={<InsertData />}>
           <Route path="insertEnergy" element={<InsertEnergy />} />
           <Route path="insertWaste" element={<InsertWaste />} />
           <Route path="insertVehicle" element={<InsertVehicle />} />
           <Route index element={<InsertVehicle/>} />
         </Route>
+        <Route path="trivia1" element={<Trivia1 />} />
+        <Route path="trivia2" element={<Trivia2 />} />
+        <Route path="trivia3" element={<Trivia3 />} />
+        <Route path="trivia4" element={<Trivia4 />} />
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
         <Route path="dashboard" element={<Dashboard />}/>
       </Routes>
