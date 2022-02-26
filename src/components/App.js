@@ -20,6 +20,7 @@ function App() {
     <>
       <NavBar />
       <Routes>
+        <Route path="" element={<Home />} />
         <Route path="inputData" element={<InputData />} />
         <Route path="insertData" element={<InsertData />}>
           <Route path="insertEnergy" element={<InsertEnergy />} />
