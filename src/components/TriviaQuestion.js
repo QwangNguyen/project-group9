@@ -26,7 +26,7 @@ export function TriviaQuestion(prop) {
                     </div>
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <Link to="/trivia4" className="btn btn-lg triviaCategory">All of the above</Link>
+                            <Link to="/correct" className="btn btn-lg triviaCategory">All of the above</Link>
                         </div>
                     </div>
                 </div>

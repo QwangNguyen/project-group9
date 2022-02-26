@@ -12,7 +12,7 @@ import { Dashboard } from "./Dashboard";
 import { TriviaStartPage }  from './TriviaStartPage';
 import { TriviaCategory } from './TriviaCategory';
 import { TriviaQuestion } from './TriviaQuestion';
-import { Trivia4 } from './Trivia4';
+import { CorrectTrivia } from './CorrectTrivia';
 import { Home } from './Home';
 import { IncorrectAnswer } from './IncorrectTrivia'
 import { About } from './About';
@@ -33,7 +33,7 @@ function App(props) {
         <Route path="triviaStartPage" element={<TriviaStartPage />} />
         <Route path="triviaCategory" element={<TriviaCategory />} />
         <Route path="triviaQuestion" element={<TriviaQuestion />} />
-        <Route path="trivia4" element={<Trivia4 />} />
+        <Route path="correct" element={<CorrectTrivia />} />
         <Route path="incorrect" element={<IncorrectAnswer />} />
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
         <Route path="dashboard" element={<Dashboard />}/>

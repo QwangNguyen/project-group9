@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export function Trivia4() {
+export function CorrectTrivia() {
     return (
         <main className="triviaBody centerMain">
             <div className="container containerTrivia">
@@ -29,7 +29,7 @@ export function Trivia4() {
                 </div>
             </div>
             <div className="container">
-                <Link to="/trivia2" className="btn btn-lg start centerElement">Try another question</Link>
+                <Link to="/triviaCategory" className="btn btn-lg start centerElement">Try another question</Link>
             </div>
         </main>
     )
