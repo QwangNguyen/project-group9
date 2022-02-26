@@ -17,7 +17,7 @@ import { Home } from './Home';
 import { IncorrectAnswer } from './IncorrectTrivia'
 import { About } from './About';
 
-function App() {
+function App(props) {
   return (
     <>
       <NavBar />
