@@ -7,7 +7,7 @@ export function Trivia4() {
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="content">
-                            <img src="img/coin.png" alt="a coin" aria-label="coin when your get the ansers for the trivia game">
+                            <img src="img/coin.png" alt="a coin" aria-label="coin when your get the ansers for the trivia game" />
                         </div>
                     </div>
                     <div className="col-sm-12">
