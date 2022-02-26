@@ -4,9 +4,9 @@ import App from './components/App';
 import { BrowserRouter } from 'react-router-dom';
 import './style.css';
 
-import climateChange from './data/climateChange.json';
+import triviaQuestions from './data/triviaQuestions.json';
 
 ReactDOM.render(
     <BrowserRouter>
-        <App triviaData={climateChange}/>
+        <App triviaData={triviaQuestions}/>
     </BrowserRouter>, document.getElementById('root'));
