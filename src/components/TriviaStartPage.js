@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export function Trivia1() {
+export function TriviaStartPage() {
     return(
         <div>
             <main className="centerMain">
