@@ -2,11 +2,11 @@ import React from 'react';
 
 export function SustainabilityScore() {
     return(
-        <main class="inputMain">
-            <h1 class="titleOfPage">Sustainability Score</h1>
-            <p class="score">90</p>
-            <div class="containerInput container">
-            <button type="button" class="btn btn-lg buttonCustom roundButton">Analyze</button>
+        <main className="inputMain">
+            <h1 className="titleOfPage">Sustainability Score</h1>
+            <p className="score">90</p>
+            <div className="containerInput container">
+            <button type="button" className="btn btn-lg buttonCustom roundButton">Analyze</button>
             </div>
         </main>
     );
