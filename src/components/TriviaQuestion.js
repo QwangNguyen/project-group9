@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-export function Trivia3(prop) {
+export function TriviaQuestion(prop) {
     return (
         <main className="centerMain">
             <div className="container containerTrivia">

@@ -18,7 +18,7 @@ export function TriviaCategory() {
                     </div>
                     <div className="col-md-4 d-flex centerElement">
                         <div className="buttonbody">
-                            <Link to="/trivia3" className="btn btn-lg triviaCategory">Climate Change</Link>
+                            <Link to="/triviaQuestion" className="btn btn-lg triviaCategory">Climate Change</Link>
                         </div>
                     </div>
                     <div className="col-md-4 d-flex centerElement">
