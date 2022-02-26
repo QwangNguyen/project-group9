@@ -13,6 +13,7 @@ import { Trivia1}  from './Trivia1';
 import { Trivia2 } from './Trivia2';
 import { Trivia3 } from './Trivia3';
 import { Trivia4 } from './Trivia4';
+import { Home } from './Home';
 
 function App() {
   return (
