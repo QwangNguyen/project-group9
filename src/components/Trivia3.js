@@ -21,7 +21,7 @@ export function Trivia3() {
                     </div>
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <button type="button" className="btn btn-lg triviaCategory buttonTan">Water Vapor</button>
+                            <Link to="/incorrect" className="btn btn-lg triviaCategory buttonTan">Water Vapor</Link>
                         </div>
                     </div>
                     <div className="col-md-6 d-flex">

@@ -14,6 +14,7 @@ import { Trivia2 } from './Trivia2';
 import { Trivia3 } from './Trivia3';
 import { Trivia4 } from './Trivia4';
 import { Home } from './Home';
+import { IncorrectAnswer } from './IncorrectTrivia'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="trivia2" element={<Trivia2 />} />
         <Route path="trivia3" element={<Trivia3 />} />
         <Route path="trivia4" element={<Trivia4 />} />
+        <Route path="incorrect" element={<IncorrectAnswer />} />
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
         <Route path="dashboard" element={<Dashboard />}/>
       </Routes>

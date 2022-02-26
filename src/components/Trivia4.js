@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function Trivia4() {
     return (
@@ -28,7 +29,7 @@ export function Trivia4() {
                 </div>
             </div>
             <div className="container">
-                <button type="button" className="btn btn-lg start centerElement">Next</button>
+                <Link to="/trivia2" className="btn btn-lg start centerElement">Try another question</Link>
             </div>
         </main>
     )
