@@ -15,6 +15,7 @@ import { Trivia3 } from './Trivia3';
 import { Trivia4 } from './Trivia4';
 import { Home } from './Home';
 import { IncorrectAnswer } from './IncorrectTrivia'
+import { About } from './About';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="incorrect" element={<IncorrectAnswer />} />
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
         <Route path="dashboard" element={<Dashboard />}/>
+        <Route path="about" element={<About />}/>
       </Routes>
       <Footer/>
     </>

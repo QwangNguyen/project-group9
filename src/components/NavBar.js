@@ -12,7 +12,7 @@ export default function NavBar() {
                             <li><Link to="trivia1" aria-label="Trivia">Trivia</Link></li>
                             <li><Link to="dashboard" aria-label="Dashboard">Dashboard</Link></li>
                             <li><Link to="inputData" aria-label="Input Data">Input Data</Link></li>
-                            <li><Link to="" aria-label="About Us">About Us</Link></li>
+                            <li><Link to="about" aria-label="About Us">About Us</Link></li>
                         </ul>
                     </div>
                 </nav>
