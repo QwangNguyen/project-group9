@@ -20,11 +20,18 @@ import { About } from './About';
 function App(props) {
   // set trivia question
   let triviaQuestions = props.triviaData;
+  // retreive category options
+  const categoryOptions = ["Urban Ecology", "Geographical Information Systems", "Climate Change", "Wildlife Ecology", "Endangered Species"];
   // set category using callback function passed into TriviaCategory
   const[category, setCategory] = useState('');
 
   let setCat = (cat) => {
-    setCategory(cat);
+    if (cat === "Random") {
+      let index = Math.floor(Math.random() * 5);
+      setCategory(categoryOptions[index]);
+    } else {
+      setCategory(cat);
+    }
   }
 
   return (

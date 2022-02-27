@@ -6,8 +6,7 @@ export function TriviaQuestion(props) {
     let selectedCat = props.category;
     
     let questionComp = triviaQuestions.filter(question => question.category === selectedCat);
-    console.log(questionComp);
-
+     console.log(questionComp);
 
     return (
         <main className="centerMain">
