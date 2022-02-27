@@ -8,7 +8,7 @@ export function IncorrectAnswer() {
                 <div className="content">
                     <h1 className="aboutHeader">Incorrect answer!</h1>
                     <p className="aboutText">Your answer was incorrect. :(</p>
-                    <Link to="/trivia2" className="btn btn-lg start centerElement">Try another question</Link>
+                    <Link to="/triviaCategory" className="btn btn-lg start centerElement">Try another question</Link>
                 </div>
             </div>
         </main>

@@ -2,37 +2,39 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export function TriviaQuestion(props) {
-    let triviaQuestions = props.triviaQ;
-    let selectedCat = props.category;
+    let triviaQuestions = props.triviaQ[0];
     
-    let questionComp = triviaQuestions.filter(question => question.category === selectedCat);
-     console.log(questionComp);
+    let question = triviaQuestions.question;
+    let answer = triviaQuestions.answer;
+    let incorrect1 = triviaQuestions.incorrect1;
+    let incorrect2 = triviaQuestions.incorrect2;
+    let incorrect3 = triviaQuestions.incorrect3;
 
     return (
         <main className="centerMain">
             <div className="container containerTrivia">
-                <p className="question">Q1: Which of the following is a greenhouse gas?</p>
+                <p className="question">{question}</p>
             </div>
             <div className="container containerTrivia containerPadding">
                 <div className="row">
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <button type="button" className="btn btn-lg triviaCategory">Carbon Dioxide</button>
+                            <Link to="/incorrect" className="btn btn-lg triviaCategory">{incorrect1}</Link>
                         </div>
                     </div>
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <button type="button" className="btn btn-lg triviaCategory buttonTan">Methane</button>
+                            <Link to="/incorrect" className="btn btn-lg triviaCategory buttonTan">{incorrect2}</Link>
                         </div>
                     </div>
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <Link to="/incorrect" className="btn btn-lg triviaCategory buttonTan">Water Vapor</Link>
+                            <Link to="/incorrect" className="btn btn-lg triviaCategory buttonTan">{incorrect3}</Link>
                         </div>
                     </div>
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <Link to="/correct" className="btn btn-lg triviaCategory">All of the above</Link>
+                            <Link to="/correct" className="btn btn-lg triviaCategory">{answer}</Link>
                         </div>
                     </div>
                 </div>

@@ -20,7 +20,7 @@ import { About } from './About';
 function App(props) {
   // set trivia question
   let triviaQuestions = props.triviaData;
-  // retreive category options
+  // retrieve category options
   const categoryOptions = ["Urban Ecology", "Geographical Information Systems", "Climate Change", "Wildlife Ecology", "Endangered Species"];
   // set category using callback function passed into TriviaCategory
   const[category, setCategory] = useState('');
@@ -33,6 +33,9 @@ function App(props) {
       setCategory(cat);
     }
   }
+
+  // filter trivia questions based on category
+  let filteredTrivia = triviaQuestions.filter(question => question.category === category);
 
   return (
     <>
@@ -48,7 +51,7 @@ function App(props) {
         </Route>
         <Route path="triviaStartPage" element={<TriviaStartPage />} />
         <Route path="triviaCategory" element={<TriviaCategory setCatCallback={setCat} />} />
-        <Route path="triviaQuestion" element={<TriviaQuestion category={category} triviaQ={triviaQuestions}/>} />
+        <Route path="triviaQuestion" element={<TriviaQuestion triviaQ={filteredTrivia}/>} />
         <Route path="correct" element={<CorrectTrivia />} />
         <Route path="incorrect" element={<IncorrectAnswer />} />
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
