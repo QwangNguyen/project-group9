@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, { useState } from 'react'; 
 import { Routes, Route } from 'react-router-dom';
 import {InputData} from './InputData';
 import {InsertData} from './InsertData';
@@ -18,6 +18,13 @@ import { IncorrectAnswer } from './IncorrectTrivia'
 import { About } from './About';
 
 function App(props) {
+  // set category using callback function passed into TriviaCategory
+  const[category, setCategory] = useState('');
+
+  let setCat = (cat) => {
+    setCategory(cat);
+  }
+
   return (
     <>
       <NavBar />
@@ -31,8 +38,8 @@ function App(props) {
           <Route index element={<InsertVehicle/>} />
         </Route>
         <Route path="triviaStartPage" element={<TriviaStartPage />} />
-        <Route path="triviaCategory" element={<TriviaCategory />} />
-        <Route path="triviaQuestion" element={<TriviaQuestion />} />
+        <Route path="triviaCategory" element={<TriviaCategory setCatCallback={setCat} />} />
+        <Route path="triviaQuestion" element={<TriviaQuestion category={category}/>} />
         <Route path="correct" element={<CorrectTrivia />} />
         <Route path="incorrect" element={<IncorrectAnswer />} />
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>

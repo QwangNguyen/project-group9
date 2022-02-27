@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export function TriviaQuestion(prop) {
+export function TriviaQuestion(props) {
+    console.log(props.category);
+
     return (
         <main className="centerMain">
             <div className="container containerTrivia">
