@@ -7,30 +7,30 @@ export function Dashboard() {
 
     return(
         <main>
-            <h1>Hello User</h1>
+            <h1 className='text-center bold greeting'>Hello User</h1>
             {/* Profile Picutre */}
-            <div className='container spaceBetween'>
+            <div className='container spaceBetween centerElement'>
                 <div className='dashboardCard'>
-                    <p className='bold'>CO2 Generated in One year:</p>
-                    <p>1350lbs</p>
+                    <p className='bold titleCard'>CO2 Generated in One year:</p>
+                    <p className='dataDisplay'>1350lbs</p>
                 </div>
                 <div className='dashboardCard'>
-                    <p className='bold'>Sustainability Score:</p>
-                    <p>40</p>
+                    <p className='bold titleCard'>Sustainability Score:</p>
+                    <p className='dataDisplay'>40</p>
                 </div>
                 <div className='dashboardCard'>
-                    <p className='bold'>Earths Used:</p>
-                    <p>2.5</p>
+                    <p className='bold titleCard'>Equivalent Earths Used:</p>
+                    <p className='dataDisplay'>2.5</p>
                 </div>
                 <div className='dashboardCard'>
-                    <p className='bold'>Earth Day:</p>
-                    <p> March 25th</p>
+                    <p className='bold titleCard'>Earth Day:</p>
+                    <p className='dataDisplay'> March 25th</p>
                 </div>
             </div>
-            <p>Questions answered correct</p>
-            <ProgressBar variant="primary" now={60} />
-            <p>Improvement</p>
-            <ProgressBar variant="dark" now={25} />
+            <p className='bold titleCard firstTitleCard'>Questions answered correct:</p>
+            <ProgressBar variant="success" animated now={60} label={60 + '%'} className='barChart'/>
+            <p className='bold titleCard'>Improvement:</p>
+            <ProgressBar variant="primary" animated now={25}  label={40 + '%'}className='barChart'/>
         </main>
     );
 }

@@ -13,7 +13,7 @@ export function Home() {
                         <Link to="/inputData" className="btn footprint roundButton">Input Your Data</Link>
                     </div>
                     <div class="containerIndex">
-                        <Link to="/trivia1" className="btn footprint roundButton">Play TriviaGame</Link>
+                        <Link to="/triviaStartPage" className="btn footprint roundButton">Play TriviaGame</Link>
                     </div>
                 </div>
                 <div role="document">
