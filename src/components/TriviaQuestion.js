@@ -2,7 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export function TriviaQuestion(props) {
-    console.log(props.category);
+    let triviaQuestions = props.triviaQ;
+    let selectedCat = props.category;
+    
+    let questionComp = triviaQuestions.filter(question => question.category === selectedCat);
+    console.log(questionComp);
+
 
     return (
         <main className="centerMain">

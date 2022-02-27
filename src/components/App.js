@@ -18,6 +18,8 @@ import { IncorrectAnswer } from './IncorrectTrivia'
 import { About } from './About';
 
 function App(props) {
+  // set trivia question
+  let triviaQuestions = props.triviaData;
   // set category using callback function passed into TriviaCategory
   const[category, setCategory] = useState('');
 
@@ -39,7 +41,7 @@ function App(props) {
         </Route>
         <Route path="triviaStartPage" element={<TriviaStartPage />} />
         <Route path="triviaCategory" element={<TriviaCategory setCatCallback={setCat} />} />
-        <Route path="triviaQuestion" element={<TriviaQuestion category={category}/>} />
+        <Route path="triviaQuestion" element={<TriviaQuestion category={category} triviaQ={triviaQuestions}/>} />
         <Route path="correct" element={<CorrectTrivia />} />
         <Route path="incorrect" element={<IncorrectAnswer />} />
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
