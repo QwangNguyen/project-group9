@@ -223,6 +223,7 @@ footer p {
 .dashboardCard {
     background-color: #ddd5d0;
     padding: 1.5em 3em;
+    margin: 1.5em 0em;
     border-radius: 10px;
 }
 
