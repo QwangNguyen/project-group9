@@ -1,5 +1,5 @@
-import React, { useState } from 'react'; 
-import { BrowserRouter, Routes, Route, Link, Outlet} from 'react-router-dom';
+import React from 'react'; 
+import { Link } from 'react-router-dom';
 
 export function InputData() {
     return (

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function NavBar() {
     return(
-        <header>
+        <header className='spaceBetween'>
             <img className="logo" src="img/EnviteLogo.png" alt="envite company logo"/>
                 <nav>
                     <div role="navigation" aria-label="Navigation Bar">
