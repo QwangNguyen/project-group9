@@ -1,24 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import climateChange from '../data/climateChange.json';
+import Spinner from 'react-bootstrap/Spinner';
 
 export function TriviaQuestion(props) {
-    {/*
     const [questionList, setQuestionList] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('https://jservice.io/api/category?id=1215')
+        console.log("hello");
+        fetch(`https://jservice.io/api/category?id=${props.id}`)
           .then((res) => res.json())
           .then((data) => {
+            console.log("hello2");
             setQuestionList(data.clues.sort(() => Math.random() - 0.5))
           })
     }, [])
-    */}
 
-    const navigate = useNavigate();
-
-    let questionList = climateChange.clues.sort(() => Math.random() - 0.5);
-    console.log(questionList);
+    if(questionList.length === 0) {
+        return(
+            <Spinner animation="border" variant="success" />
+        );
+    }
     
     let correctAnswer = questionList[0].answer;
 
@@ -26,11 +28,8 @@ export function TriviaQuestion(props) {
     for(let i = 0; i < 4; i ++) {
         answerList.push(questionList[i].answer);
     }
-
     let question = questionList[0].question;
     answerList = answerList.sort(() => Math.random() - 0.5);
-
-    
 
     const handleClick = (event) => {
         if(event.currentTarget.name === correctAnswer) {
