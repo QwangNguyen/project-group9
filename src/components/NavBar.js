@@ -13,6 +13,7 @@ export default function NavBar() {
                             <li><Link to="dashboard" aria-label="Dashboard">Dashboard</Link></li>
                             <li><Link to="inputData" aria-label="Input Data">Input Data</Link></li>
                             <li><Link to="about" aria-label="About Us">About Us</Link></li>
+                            <li><Link to="login" aria-label="About Us">Login</Link></li>
                         </ul>
                     </div>
                 </nav>

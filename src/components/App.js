@@ -19,14 +19,11 @@ import { About } from './About';
 import { Login } from './login';
 
 function App(props) {
-  // set trivia question
-  let triviaQuestions = props.triviaData;
-  // retrieve category options
-  const categoryOptions = ["Urban Ecology", "Geographical Information Systems", "Climate Change", "Wildlife Ecology", "Endangered Species"];
-  // set category using callback function passed into TriviaCategory
-
   const[category, setCategory] = useState('');
   const[questionsCorrect, setQuestionsCorrect] = useState([0, 0]);
+  const[isLoggedIn, setisLoggedIn] = useState(false);
+
+  const categoryOptions = ["21", "9919", "1215", "267", "3835"];
 
   const setCat = (cat) => {
     if (cat === "Random") {
@@ -44,7 +41,9 @@ function App(props) {
     setQuestionsCorrect(questionsCorrect[1]++);
   }
 
-  // filter trivia questions based on category
+  const logIn = () => {
+    setisLoggedIn(true);
+  }
 
   return (
     <>
@@ -65,7 +64,7 @@ function App(props) {
         <Route path="correct" element={<CorrectTrivia />} />
         <Route path="incorrect" element={<IncorrectAnswer />} />
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
-        <Route path="dashboard" element={<Dashboard score={questionsCorrect}/>}/>
+        <Route path="dashboard" element={<Dashboard score={questionsCorrect} loggedIn={isLoggedIn}/>}/>
         <Route path="about" element={<About />}/>
       </Routes>
       <Footer/>

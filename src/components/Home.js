@@ -15,6 +15,9 @@ export function Home() {
                     <div className="containerIndex">
                         <Link to="/triviaStartPage" className="btn footprint roundButton">Play TriviaGame</Link>
                     </div>
+                    <div className="containerIndex">
+                        <Link to="/Login" className="btn footprint roundButton">Login</Link>
+                    </div>
                 </div>
                 <div role="document">
                     <div className="missionContainer">
