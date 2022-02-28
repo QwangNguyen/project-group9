@@ -4,7 +4,7 @@ export function InsertEnergy() {
     return(
         <form>
           <div>
-            <label for="NaturalGas" className="formInput labelForm">Natural Gas Usage:</label><br/>
+            <label htmlFor="NaturalGas" className="formInput labelForm">Natural Gas Usage:</label><br/>
             <input type="text" name="NaturalGas" id="NaturalGas" className="textBox formInput"/>
             <select className="selectForm">
               <option>Dollars</option>
@@ -12,7 +12,7 @@ export function InsertEnergy() {
             </select>
           </div>
           <div>
-            <label for="Electricity" className="formInput labelForm">Electricity:</label><br/>
+            <label htmlFor="Electricity" className="formInput labelForm">Electricity:</label><br/>
             <input type="text" name="Electricity" id ="Electricity" className="textBox formInput"/>
             <select className="selectForm">
               <option>Dollars</option>
@@ -20,7 +20,7 @@ export function InsertEnergy() {
             </select>
           </div>
           <div>
-            <label for="FuelOil" className="formInput labelForm">Fuel Oil:</label><br/>
+            <label htmlFor="FuelOil" className="formInput labelForm">Fuel Oil:</label><br/>
             <input type="text" name="FuelOil" id="FuelOil" className="textBox formInput"/>
             <select className="selectForm">
               <option>Dollars</option>
@@ -28,9 +28,9 @@ export function InsertEnergy() {
             </select>
           </div>
           <div>
-            <label for="Propane" className="formInput labelForm">Propane:</label><br/>
+            <label htmlFor="Propane" className="formInput labelForm">Propane:</label><br/>
             <input type="text" name="Propane" id="Propane" className="textBox formInput"/> 
-            <select class="selectForm">
+            <select className="selectForm">
               <option>Dollars</option>
               <option>Gallons</option>
             </select>

@@ -1,17 +1,15 @@
 import React from 'react'; 
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import { useNavigate } from 'react-router-dom';
 import { Login } from './login';
 import { propTypes } from 'react-bootstrap/esm/Image';
 
 export function Dashboard(props) {
-    const navigate = useNavigate();
 
     let percent = props.score[0]/props.score[1];
     let correct = props.score[0];
 
     if(!props.loggedIn) {
-        return <Login />
+        return <Login loginCallback={props.loginCallback} source="/dashboard"/>
     } else {
         return(
             <main>

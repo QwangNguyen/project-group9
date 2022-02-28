@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Spinner from 'react-bootstrap/Spinner';
+import { CorrectTrivia } from './CorrectTrivia';
+import { IncorrectAnswer } from './IncorrectTrivia';
 
 export function TriviaQuestion(props) {
     const [questionList, setQuestionList] = useState([]);
@@ -33,11 +35,11 @@ export function TriviaQuestion(props) {
 
     const handleClick = (event) => {
         if(event.currentTarget.name === correctAnswer) {
-            props.questionCallback(true);
-            navigate("/correct")
+        {/* props.questionCallback(true); */}
+            return <CorrectTrivia />
         } else {
-            props.questionCallback(false);
-            navigate("/incorrect")
+        {/* props.questionCallback(false); */}
+            return <IncorrectAnswer />
         }
     }
 

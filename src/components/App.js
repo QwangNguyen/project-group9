@@ -49,7 +49,7 @@ function App(props) {
     <>
       <NavBar />
       <Routes>
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<Login loginCallback={logIn} source="/"/>}  />
         <Route path="/" element={<Home />} />
         <Route path="inputData" element={<InputData />} />
         <Route path="insertData" element={<InsertData />}>
@@ -61,10 +61,12 @@ function App(props) {
         <Route path="triviaStartPage" element={<TriviaStartPage />} />
         <Route path="triviaCategory" element={<TriviaCategory setCatCallback={setCat} />} />
         <Route path="triviaQuestion" element={<TriviaQuestion id={category} questionCallBack={answerQuestion}/>} />
+        {/*}
         <Route path="correct" element={<CorrectTrivia />} />
-        <Route path="incorrect" element={<IncorrectAnswer />} />
+        <Route path="incorrect" element={<IncorrectAnswer />} /> 
+        */}
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
-        <Route path="dashboard" element={<Dashboard score={questionsCorrect} loggedIn={isLoggedIn}/>}/>
+        <Route path="dashboard" element={<Dashboard score={questionsCorrect} loggedIn={isLoggedIn} loginCallback={logIn}/>}/>
         <Route path="about" element={<About />}/>
       </Routes>
       <Footer/>

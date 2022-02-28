@@ -6,7 +6,7 @@ export function About() {
             <h1 className="aboutHeader">Who are we?</h1>
             <p className="aboutText">We are INFO 340 Group 9: Quang, Vivian, Winni and Kaarina.</p>
             <figure>
-                <img src="./img/cats.png" alt="four small kittens" aria-label="four small kittens that represent the group" width="325" height="250" class="catImg"/>
+                <img src="./img/cats.png" alt="four small kittens" aria-label="four small kittens that represent the group" width="325" height="250" className="catImg"/>
                 <figcaption>Note: We are not actually cats, this is just a representation of our group.</figcaption>
             </figure>
             <h2 className="aboutHeader">Why sustainability?</h2>
