@@ -1,15 +1,46 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import triviaQuestions from '../data/climateChange.json';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import climateChange from '../data/climateChange.json';
 
 export function TriviaQuestion(props) {
-    let questionList = triviaQuestions.clues.sort(() => Math.random() - 0.5);
+    {/*
+    const [questionList, setQuestionList] = useState([]);
+
+    useEffect(() => {
+        fetch('https://jservice.io/api/category?id=1215')
+          .then((res) => res.json())
+          .then((data) => {
+            setQuestionList(data.clues.sort(() => Math.random() - 0.5))
+          })
+    }, [])
+    */}
+
+    const navigate = useNavigate();
+
+    let questionList = climateChange.clues.sort(() => Math.random() - 0.5);
+    console.log(questionList);
     
+    let correctAnswer = questionList[0].answer;
+
+    let answerList = [];
+    for(let i = 0; i < 4; i ++) {
+        answerList.push(questionList[i].answer);
+    }
+
     let question = questionList[0].question;
-    let answer = questionList[0].answer;
-    let incorrect1 = questionList[1].answer;
-    let incorrect2 = questionList[2].answer;
-    let incorrect3 = questionList[3].answer;
+    answerList = answerList.sort(() => Math.random() - 0.5);
+
+    
+
+    const handleClick = (event) => {
+        if(event.currentTarget.name === correctAnswer) {
+            props.questionCallback(true);
+            navigate("/correct")
+        } else {
+            props.questionCallback(false);
+            navigate("/incorrect")
+        }
+    }
 
     return (
         <main className="centerMain">
@@ -20,22 +51,30 @@ export function TriviaQuestion(props) {
                 <div className="row">
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <Link to="/incorrect" className="btn btn-lg triviaCategory">{incorrect1}</Link>
+                            <button className="btn btn-lg triviaCategory" onClick={handleClick} name={answerList[0]}>
+                                {answerList[0]}
+                            </button>
                         </div>
                     </div>
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <Link to="/incorrect" className="btn btn-lg triviaCategory buttonTan">{incorrect2}</Link>
+                            <button className="btn btn-lg triviaCategory buttonTan" onClick={handleClick} name={answerList[1]}>
+                                {answerList[1]}
+                            </button>
                         </div>
                     </div>
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <Link to="/incorrect" className="btn btn-lg triviaCategory buttonTan">{incorrect3}</Link>
+                            <button className="btn btn-lg triviaCategory buttonTan" onClick={handleClick} name={answerList[2]}>
+                                {answerList[2]}
+                            </button>
                         </div>
                     </div>
                     <div className="col-md-6 d-flex">
                         <div className="buttonbody">
-                            <Link to="/correct" className="btn btn-lg triviaCategory">{answer}</Link>
+                            <button className="btn btn-lg triviaCategory" onClick={handleClick} name={answerList[3]}>
+                                {answerList[3]}
+                            </button>
                         </div>
                     </div>
                 </div>

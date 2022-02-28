@@ -1,9 +1,11 @@
 import React from 'react'; 
 import { Avatar } from './Avatar';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import { propTypes } from 'react-bootstrap/esm/Image';
 
-export function Dashboard() {
-
+export function Dashboard(props) {
+    let percent = props.score[0]/props.score[1];
+    let correct = props.score[0];
 
     return(
         <main>
@@ -28,7 +30,7 @@ export function Dashboard() {
                 </div>
             </div>
             <p className='bold titleCard firstTitleCard'>Questions answered correct:</p>
-            <ProgressBar variant="success" animated now={60} label={60 + '%'} className='barChart'/>
+            <ProgressBar variant="success" animated now={correct} label={percent} className='barChart'/>
             <p className='bold titleCard'>Improvement:</p>
             <ProgressBar variant="primary" animated now={25}  label={40 + '%'}className='barChart'/>
         </main>

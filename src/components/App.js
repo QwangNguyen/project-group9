@@ -25,14 +25,22 @@ function App(props) {
   // set category using callback function passed into TriviaCategory
 
   const[category, setCategory] = useState('');
+  const[questionsCorrect, setQuestionsCorrect] = useState([0, 0]);
 
-  let setCat = (cat) => {
+  const setCat = (cat) => {
     if (cat === "Random") {
       let index = Math.floor(Math.random() * 5);
       setCategory(categoryOptions[index]);
     } else {
       setCategory(cat);
     }
+  }
+
+  const answerQuestion = (correct) => {
+    if(correct) {
+      setQuestionsCorrect(questionsCorrect[0]++);
+    }
+    setQuestionsCorrect(questionsCorrect[1]++);
   }
 
   // filter trivia questions based on category
@@ -51,11 +59,11 @@ function App(props) {
         </Route>
         <Route path="triviaStartPage" element={<TriviaStartPage />} />
         <Route path="triviaCategory" element={<TriviaCategory setCatCallback={setCat} />} />
-        <Route path="triviaQuestion" element={<TriviaQuestion id={category}/>} />
+        <Route path="triviaQuestion" element={<TriviaQuestion id={category} questionCallBack={answerQuestion}/>} />
         <Route path="correct" element={<CorrectTrivia />} />
         <Route path="incorrect" element={<IncorrectAnswer />} />
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
-        <Route path="dashboard" element={<Dashboard />}/>
+        <Route path="dashboard" element={<Dashboard score={questionsCorrect}/>}/>
         <Route path="about" element={<About />}/>
       </Routes>
       <Footer/>

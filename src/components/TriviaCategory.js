@@ -8,12 +8,12 @@ export function TriviaCategory(props) {
                 <div className="row">
                     <div className="col-md-4 d-flex centerElement">
                         <div className="buttonbody">
-                            <Link to="/triviaQuestion" onClick={() => props.setCatCallback("Urban Ecology")} className="btn btn-lg triviaCategory">Urban Ecology</Link>
+                            <Link to="/triviaQuestion" onClick={() => props.setCatCallback("21")} className="btn btn-lg triviaCategory">Animals of the Earth</Link>
                         </div>
                     </div>
                     <div className="col-md-4 d-flex centerElement">
                         <div className="buttonbody">
-                            <Link to="/triviaQuestion" onClick={() => props.setCatCallback("Geographical Information Systems")} className="btn btn-lg triviaCategory buttonTan">Geographical Information Systems</Link>
+                            <Link to="/triviaQuestion" onClick={() => props.setCatCallback("9919")} className="btn btn-lg triviaCategory buttonTan">Nature Study</Link>
                         </div>
                     </div>
                     <div className="col-md-4 d-flex centerElement">
@@ -23,12 +23,12 @@ export function TriviaCategory(props) {
                     </div>
                     <div className="col-md-4 d-flex centerElement">
                         <div className="buttonbody">
-                            <Link to="/triviaQuestion" onClick={() => props.setCatCallback("Wildlife Ecology")} className="btn btn-lg triviaCategory buttonTan">Wildlife Ecology</Link>
+                            <Link to="/triviaQuestion" onClick={() => props.setCatCallback("267")} className="btn btn-lg triviaCategory buttonTan">Wildlife Ecology</Link>
                         </div>
                     </div>
                     <div className="col-md-4 d-flex centerElement">
                         <div className="buttonbody">
-                            <Link to="/triviaQuestion" onClick={() => props.setCatCallback("Endangered Species")} className="btn btn-lg triviaCategory">Endangered Species</Link>
+                            <Link to="/triviaQuestion" onClick={() => props.setCatCallback("3835")} className="btn btn-lg triviaCategory">Endangered Species</Link>
                         </div>
                     </div>
                     <div className="col-md-4 d-flex centerElement">
