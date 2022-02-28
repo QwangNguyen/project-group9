@@ -16,6 +16,7 @@ import { CorrectTrivia } from './CorrectTrivia';
 import { Home } from './Home';
 import { IncorrectAnswer } from './IncorrectTrivia'
 import { About } from './About';
+import { Login } from './login';
 
 function App(props) {
   // set trivia question
@@ -49,7 +50,8 @@ function App(props) {
     <>
       <NavBar />
       <Routes>
-        <Route path="" element={<Home />} />
+        <Route path="login" element={<Login />} />
+        <Route path="/" element={<Home />} />
         <Route path="inputData" element={<InputData />} />
         <Route path="insertData" element={<InsertData />}>
           <Route path="insertEnergy" element={<InsertEnergy />} />
