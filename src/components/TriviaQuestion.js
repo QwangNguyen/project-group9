@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export function TriviaQuestion(props) {
@@ -9,6 +9,18 @@ export function TriviaQuestion(props) {
     let incorrect1 = triviaQuestions.incorrect1;
     let incorrect2 = triviaQuestions.incorrect2;
     let incorrect3 = triviaQuestions.incorrect3;
+
+    const [questionList, setQuestionList] = useState([]);
+
+    {/*}
+    useEffect(() => {
+        fetch(`https://jservice.io/api/category?id=${category_id}`) //send AJAX request
+          .then((res) => res.json())
+          .then((data) => {
+            setQuestionList(data) 
+          })
+    }, [])
+    */}
 
     return (
         <main className="centerMain">

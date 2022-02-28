@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useState, useEffect } from 'react'; 
 import { Routes, Route } from 'react-router-dom';
 import {InputData} from './InputData';
 import {InsertData} from './InsertData';
@@ -23,6 +23,7 @@ function App(props) {
   // retrieve category options
   const categoryOptions = ["Urban Ecology", "Geographical Information Systems", "Climate Change", "Wildlife Ecology", "Endangered Species"];
   // set category using callback function passed into TriviaCategory
+
   const[category, setCategory] = useState('');
 
   let setCat = (cat) => {
