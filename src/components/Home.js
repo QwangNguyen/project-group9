@@ -12,7 +12,7 @@ export function Home() {
                     <div className="containerIndex">
                         <Link to="/inputData" className="btn footprint roundButton">Input Your Data</Link>
                     </div>
-                    <div class="containerIndex">
+                    <div className="containerIndex">
                         <Link to="/triviaStartPage" className="btn footprint roundButton">Play TriviaGame</Link>
                     </div>
                 </div>

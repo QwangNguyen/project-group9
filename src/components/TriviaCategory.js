@@ -18,7 +18,7 @@ export function TriviaCategory(props) {
                     </div>
                     <div className="col-md-4 d-flex centerElement">
                         <div className="buttonbody">
-                            <Link to="/triviaQuestion" onClick={() => props.setCatCallback("Climate Change")} className="btn btn-lg triviaCategory">Climate Change</Link>
+                            <Link to="/triviaQuestion" onClick={() => props.setCatCallback("1215")} className="btn btn-lg triviaCategory">Climate Change</Link>
                         </div>
                     </div>
                     <div className="col-md-4 d-flex centerElement">

@@ -36,7 +36,6 @@ function App(props) {
   }
 
   // filter trivia questions based on category
-  let filteredTrivia = triviaQuestions.filter(question => question.category === category);
 
   return (
     <>
@@ -52,7 +51,7 @@ function App(props) {
         </Route>
         <Route path="triviaStartPage" element={<TriviaStartPage />} />
         <Route path="triviaCategory" element={<TriviaCategory setCatCallback={setCat} />} />
-        <Route path="triviaQuestion" element={<TriviaQuestion triviaQ={filteredTrivia}/>} />
+        <Route path="triviaQuestion" element={<TriviaQuestion id={category}/>} />
         <Route path="correct" element={<CorrectTrivia />} />
         <Route path="incorrect" element={<IncorrectAnswer />} />
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>

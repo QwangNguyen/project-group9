@@ -1,26 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import triviaQuestions from '../data/climateChange.json';
 
 export function TriviaQuestion(props) {
-    let triviaQuestions = props.triviaQ[0];
+    let questionList = triviaQuestions.clues.sort(() => Math.random() - 0.5);
     
-    let question = triviaQuestions.question;
-    let answer = triviaQuestions.answer;
-    let incorrect1 = triviaQuestions.incorrect1;
-    let incorrect2 = triviaQuestions.incorrect2;
-    let incorrect3 = triviaQuestions.incorrect3;
-
-    const [questionList, setQuestionList] = useState([]);
-
-    {/*}
-    useEffect(() => {
-        fetch(`https://jservice.io/api/category?id=${category_id}`) //send AJAX request
-          .then((res) => res.json())
-          .then((data) => {
-            setQuestionList(data) 
-          })
-    }, [])
-    */}
+    let question = questionList[0].question;
+    let answer = questionList[0].answer;
+    let incorrect1 = questionList[1].answer;
+    let incorrect2 = questionList[2].answer;
+    let incorrect3 = questionList[3].answer;
 
     return (
         <main className="centerMain">
@@ -51,6 +40,6 @@ export function TriviaQuestion(props) {
                     </div>
                 </div>
             </div>
-        </main>
+        </main>     
     )
 }
