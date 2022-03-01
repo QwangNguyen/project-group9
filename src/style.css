@@ -199,11 +199,6 @@ footer p {
 
 /**********Dashboard*****************/
 .dashboardCard {
-    /* background: rgb(221,213,208);
-    background: radial-gradient(circle, rgba(221,213,208,1) 48%, rgba(184,184,170,1) 100%);
-    padding: 1.5em 2.5em;
-    margin: .5em 0em;
-    border-radius: 10px; */
     background-color: #DDD5D0;
     padding: 1.5em 2.5em;
     margin: .5em 0em;
@@ -211,19 +206,30 @@ footer p {
 }
 .titleCard {
     font-size: 1.5em;
+
 }
 .barChart {
     height: 2.5em;
     margin-bottom: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 .greeting {
     margin: .5em 0em;
 }
 .firstTitleCard {
     margin-top: 1em;
+    margin-left: 2.8em;
 }
 .dataDisplay {
     font-size: 1.5em;
+}
+
+.long {
+    background-color: #586F6B;
+    color: white;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 /****************Trivia*****/
