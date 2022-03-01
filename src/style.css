@@ -199,11 +199,15 @@ footer p {
 
 /**********Dashboard*****************/
 .dashboardCard {
-    background: rgb(221,213,208);
+    /* background: rgb(221,213,208);
     background: radial-gradient(circle, rgba(221,213,208,1) 48%, rgba(184,184,170,1) 100%);
     padding: 1.5em 2.5em;
     margin: .5em 0em;
-    border-radius: 10px;
+    border-radius: 10px; */
+    background-color: #DDD5D0;
+    padding: 1.5em 2.5em;
+    margin: .5em 0em;
+    border-radius: 10px; 
 }
 .titleCard {
     font-size: 1.5em;

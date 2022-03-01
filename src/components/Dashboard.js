@@ -29,6 +29,7 @@ export function Dashboard(props) {
                     </div>
                     <div className='dashboardCard'>
                         <p className='bold titleCard'>Earth Day:</p>
+                        <p className='dataDisplay'>(represent the date that earth's yearly carbon threshold is passed if everyone lives the same way as you)</p>
                         <p className='dataDisplay'> March 25th</p>
                     </div>
                 </div>
