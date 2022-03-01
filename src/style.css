@@ -250,6 +250,9 @@ footer p {
     background-color: #DDD5D0;
     color: black;
 }
+.buttonTan:hover {
+    color: white;
+}
 
 .buttonbody a {
     padding-top: 5rem;

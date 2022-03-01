@@ -22,6 +22,7 @@ function App(props) {
   const[category, setCategory] = useState('');
   const[questionsCorrect, setQuestionsCorrect] = useState([0, 0]);
   const[isLoggedIn, setisLoggedIn] = useState(false);
+  const[isCorrect, setIsCorrect] = useState(false);
 
   const categoryOptions = ["21", "9919", "1215", "267", "3835"];
 
@@ -35,10 +36,15 @@ function App(props) {
   }
 
   const answerQuestion = (correct) => {
+    const questionsCorrectCopy = [...questionsCorrect];
     if(correct) {
-      setQuestionsCorrect(questionsCorrect[0]++);
+      setIsCorrect(true);
+      questionsCorrectCopy[0]++;
+    } else {
+      setIsCorrect(false);
     }
-    setQuestionsCorrect(questionsCorrect[1]++);
+    questionsCorrectCopy[1]++;
+    setQuestionsCorrect(questionsCorrectCopy)
   }
 
   const logIn = () => {
@@ -60,13 +66,14 @@ function App(props) {
         </Route>
         <Route path="triviaStartPage" element={<TriviaStartPage />} />
         <Route path="triviaCategory" element={<TriviaCategory setCatCallback={setCat} />} />
-        <Route path="triviaQuestion" element={<TriviaQuestion id={category} questionCallBack={answerQuestion}/>} />
+        <Route path="triviaQuestion" element={<TriviaQuestion id={category} questionCallback={answerQuestion} />} />
+        <Route path="correct" element={<CorrectTrivia correct={isCorrect}/>} />
+
         {/*}
-        <Route path="correct" element={<CorrectTrivia />} />
         <Route path="incorrect" element={<IncorrectAnswer />} /> 
         */}
         <Route path="sustainabilityScore" element={<SustainabilityScore />}/>
-        <Route path="dashboard" element={<Dashboard score={questionsCorrect} loggedIn={isLoggedIn} loginCallback={logIn}/>}/>
+        <Route path="dashboard" element={<Dashboard score={questionsCorrect} loggedIn={isLoggedIn} loginCallback={logIn} />}/>
         <Route path="about" element={<About />}/>
       </Routes>
       <Footer/>

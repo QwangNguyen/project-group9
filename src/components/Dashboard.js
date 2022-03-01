@@ -5,8 +5,7 @@ import { propTypes } from 'react-bootstrap/esm/Image';
 
 export function Dashboard(props) {
 
-    let percent = props.score[0]/props.score[1];
-    let correct = props.score[0];
+    console.log(props);
 
     if(!props.loggedIn) {
         return <Login loginCallback={props.loginCallback} source="/dashboard"/>
@@ -34,7 +33,7 @@ export function Dashboard(props) {
                     </div>
                 </div>
                 <p className='bold titleCard firstTitleCard'>Questions answered correct:</p>
-                <ProgressBar variant="success" animated now={correct} label={percent} className='barChart'/>
+                <ProgressBar variant="success" animated now={props.score[0]} max={props.score[1]} label={(props.score[1] === 0 ? '0' : props.score[0]/props.score[1] * 100 + '%')} className='barChart'/>
                 <p className='bold titleCard'>Improvement:</p>
                 <ProgressBar variant="primary" animated now={25}  label={40 + '%'}className='barChart'/>
             </main>
